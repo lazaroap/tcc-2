@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String      @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+
+  phone     String?
+  avatar  String?
+  age       Int?
+  gender    Gender?
+
+  role      UserRole @default(USER)
+
+  provider    Provider?
+  memberships GroupMember[]
+  groupsOwned Group[] @relation("GroupOwner")
+
+  reviews   Review[]
+
+  refreshToken String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+enum GroupRole {
+  MEMBER
+  ADMIN
+}
+
+model Provider {
+  id        String   @id @default(cuid())
+  userId    String   @unique 
+  category  String
+  bio       String?
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reviews   Review[]
+
+  createdAt DateTime @default(now())
+}
+
+model Group {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  ownerId     String 
+  photoUrl    String?
+
+  owner       User @relation("GroupOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  members     GroupMember[]
+  reviews     Review[]
+
+  createdAt DateTime @default(now())
+}
+
+model GroupMember {
+  id      String @id @default(cuid())
+  userId  String 
+  groupId String 
+  role    GroupRole @default(MEMBER)
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  group Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, groupId])
+}
+
+model Review {
+  id         String @id @default(cuid())
+  rating     Int
+  comment    String?
+
+  userId     String 
+  providerId String 
+  groupId    String? 
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  group    Group?   @relation(fields: [groupId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+}
