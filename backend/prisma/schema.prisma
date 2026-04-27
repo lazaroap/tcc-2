@@ -26,6 +26,18 @@ model User {
 
   reviews   Review[]
 
+  recommendations       Recommendation[]
+  recommendationVotes   RecommendationVote[]
+  recommendationComments RecommendationComment[]
+  recommendationRequests RecommendationRequest[]
+
+  requestReplies  RequestReply[]
+  sentInvites     GroupInvite[] @relation("InviteSender")
+  receivedInvites GroupInvite[] @relation("InviteReceiver")
+  joinRequests    JoinRequest[]
+
+  notifications   Notification[]
+
   refreshToken String?
 
   createdAt DateTime @default(now())
@@ -50,12 +62,13 @@ enum GroupRole {
 
 model Provider {
   id        String   @id @default(cuid())
-  userId    String   @unique 
+  userId    String   @unique
   category  String
   bio       String?
 
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   reviews   Review[]
+  recommendations Recommendation[]
 
   createdAt DateTime @default(now())
 }
@@ -64,12 +77,16 @@ model Group {
   id          String   @id @default(cuid())
   name        String
   description String?
-  ownerId     String 
+  ownerId     String
   photoUrl    String?
 
   owner       User @relation("GroupOwner", fields: [ownerId], references: [id], onDelete: Cascade)
   members     GroupMember[]
-  reviews     Review[]
+  invites      GroupInvite[]
+  joinRequests JoinRequest[]
+  reviews      Review[]
+  recommendations    Recommendation[]
+  recommendationRequests RecommendationRequest[]
 
   createdAt DateTime @default(now())
 }
@@ -98,6 +115,160 @@ model Review {
   user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
   group    Group?   @relation(fields: [groupId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, providerId])
+}
+
+enum VoteType {
+  UP
+  DOWN
+}
+
+model Recommendation {
+  id          String @id @default(cuid())
+  title       String
+  description String?
+
+  authorId   String
+  providerId String?
+  groupId    String
+
+  // Campos para prestador externo (nao cadastrado)
+  externalName     String?
+  externalCategory String?
+  externalPhone    String?
+
+  author   User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  provider Provider? @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  group    Group     @relation(fields: [groupId], references: [id], onDelete: Cascade)
+
+  votes    RecommendationVote[]
+  comments RecommendationComment[]
+
+  createdAt DateTime @default(now())
+}
+
+model RecommendationVote {
+  id               String @id @default(cuid())
+  type             VoteType
+
+  userId           String
+  recommendationId String
+
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  recommendation Recommendation @relation(fields: [recommendationId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, recommendationId])
+}
+
+model RecommendationComment {
+  id      String @id @default(cuid())
+  content String
+
+  userId           String
+  recommendationId String
+
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  recommendation Recommendation @relation(fields: [recommendationId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+model RecommendationRequest {
+  id          String  @id @default(cuid())
+  title       String
+  description String?
+  category    String?
+  resolved    Boolean @default(false)
+
+  authorId String
+  groupId  String
+
+  author  User  @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  group   Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  replies RequestReply[]
+
+  createdAt DateTime @default(now())
+}
+
+model RequestReply {
+  id      String @id @default(cuid())
+  content String
+
+  userId    String
+  requestId String
+
+  user    User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  request RecommendationRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+enum InviteStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+}
+
+model GroupInvite {
+  id        String       @id @default(cuid())
+  status    InviteStatus @default(PENDING)
+
+  groupId   String
+  senderId  String
+  receiverId String
+
+  group    Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  sender   User  @relation("InviteSender", fields: [senderId], references: [id], onDelete: Cascade)
+  receiver User  @relation("InviteReceiver", fields: [receiverId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([groupId, receiverId])
+}
+
+model JoinRequest {
+  id        String       @id @default(cuid())
+  status    InviteStatus @default(PENDING)
+  message   String?
+
+  userId    String
+  groupId   String
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  group Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, groupId])
+}
+
+enum NotificationType {
+  INVITE_RECEIVED
+  INVITE_ACCEPTED
+  JOIN_REQUEST_RECEIVED
+  JOIN_REQUEST_ACCEPTED
+  JOIN_REQUEST_REJECTED
+  NEW_REVIEW
+  NEW_RECOMMENDATION
+  NEW_COMMENT
+  NEW_REQUEST_REPLY
+  GROUP_JOINED
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  type      NotificationType
+  message   String
+  read      Boolean          @default(false)
+
+  userId    String
+  user      User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Referencia opcional ao recurso relacionado
+  resourceId String?
 
   createdAt DateTime @default(now())
 }

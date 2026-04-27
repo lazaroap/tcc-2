@@ -1,28 +1,22 @@
 const express = require('express');
-const { body } = require('express-validator');
+const rateLimit = require('express-rate-limit');
 const authController = require('../controllers/authController');
 const authMiddleware = require('../middlewares/authMiddleware');
-
+const { loginRules, registerRules, refreshTokenRules, validate } = require('../validators');
 const router = express.Router();
 
-const loginValidators = [
-    body('email').isEmail().withMessage('Email inválido').normalizeEmail(),
-    body('password').notEmpty().withMessage('Senha é obrigatória'),
-];
+const loginLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 10,
+    message: { error: 'Muitas tentativas de login. Tente novamente em 15 minutos.' },
+    standardHeaders: true,
+    legacyHeaders: false,
+    skip: () => process.env.NODE_ENV === 'test',
+});
 
-const registerValidators = [
-    body('name').notEmpty().withMessage('Nome é obrigatório').trim().escape(),
-    body('email').isEmail().withMessage('Email inválido').normalizeEmail(),
-    body('password').isLength({ min: 8 }).withMessage('Senha deve ter ao menos 8 caracteres'),
-];
-
-const refreshTokenValidators = [
-    body('refreshToken').notEmpty().withMessage('Refresh token é obrigatório'),
-];
-
-router.post('/login', loginValidators, authController.login);
-router.post('/register', registerValidators, authController.registerUser);
-router.post('/refresh', refreshTokenValidators, authController.refreshToken);
+router.post('/login', loginLimiter, loginRules, validate, authController.login);
+router.post('/register', registerRules, validate, authController.registerUser);
+router.post('/refresh', refreshTokenRules, validate, authController.refreshToken);
 router.post('/logout', authMiddleware, authController.logout);
 
 module.exports = router;

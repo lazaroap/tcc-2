@@ -1,0 +1,2168 @@
+openapi: 3.0.3
+info:
+  title: ConectaServ API
+  version: 1.0.0
+  description: |
+    Documentação completa da API do ConectaServ (auth, usuários, providers, grupos,
+    convites, recomendações, votos, comentários, pedidos de recomendação, avaliações e notificações).
+
+servers:
+  - url: http://localhost:3000/api
+    description: Swagger docs app
+  - url: http://localhost:3333
+    description: Backend local (ajuste conforme seu projeto)
+
+tags:
+  - name: Auth
+  - name: Users
+  - name: Providers
+  - name: Groups
+  - name: Invites
+  - name: Recommendations
+  - name: Votes
+  - name: Comments
+  - name: Requests
+  - name: Replies
+  - name: Reviews
+  - name: Notifications
+
+security:
+  - bearerAuth: []
+
+paths:
+  # ─── Auth ───────────────────────────────────────────────────────────────
+  /auth/register:
+    post:
+      tags: [Auth]
+      summary: Registrar usuário
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthRegisterRequest"
+      responses:
+        "201":
+          description: Usuário criado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "409":
+          description: E-mail já cadastrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /auth/login:
+    post:
+      tags: [Auth]
+      summary: Login
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthLoginRequest"
+      responses:
+        "200":
+          description: Login realizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /auth/refresh:
+    post:
+      tags: [Auth]
+      summary: Renovar token de acesso via refresh token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [refreshToken]
+              properties:
+                refreshToken:
+                  type: string
+      responses:
+        "200":
+          description: Novos tokens gerados
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  refreshToken:
+                    type: string
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /auth/logout:
+    post:
+      tags: [Auth]
+      summary: Logout (invalida o refresh token)
+      responses:
+        "200":
+          description: Logout realizado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Logout realizado com sucesso
+
+  # ─── Users ──────────────────────────────────────────────────────────────
+  /users/me:
+    get:
+      tags: [Users]
+      summary: Retorna o perfil do usuário autenticado
+      responses:
+        "200":
+          description: Perfil do usuário logado (com dados do provider, se houver)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /users:
+    get:
+      tags: [Users]
+      summary: Listar usuários (paginado)
+      parameters:
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+      responses:
+        "200":
+          description: Lista paginada de usuários
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  users:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/User"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /users/{id}:
+    get:
+      tags: [Users]
+      summary: Obter usuário por ID
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Usuário encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    put:
+      tags: [Users]
+      summary: Atualizar usuário
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserUpdateRequest"
+      responses:
+        "200":
+          description: Usuário atualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Users]
+      summary: Remover usuário
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Usuário removido
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Providers ──────────────────────────────────────────────────────────
+  /providers:
+    post:
+      tags: [Providers]
+      summary: Criar perfil de prestador para o usuário autenticado
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProviderCreateRequest"
+      responses:
+        "201":
+          description: Prestador criado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Provider"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "409":
+          description: Usuário já é prestador
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      tags: [Providers]
+      summary: Listar prestadores (paginado, com filtros)
+      security: []
+      parameters:
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+        - in: query
+          name: search
+          schema:
+            type: string
+          description: Busca por categoria, bio ou nome do usuário
+        - in: query
+          name: category
+          schema:
+            type: string
+          description: Filtrar por categoria exata
+        - in: query
+          name: sort
+          schema:
+            type: string
+            enum: [rating]
+          description: Ordenar por rating
+      responses:
+        "200":
+          description: Lista de prestadores
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  providers:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Provider"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+
+  /providers/categories:
+    get:
+      tags: [Providers]
+      summary: Listar categorias disponíveis
+      security: []
+      responses:
+        "200":
+          description: Lista de categorias
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  categories:
+                    type: array
+                    items:
+                      type: string
+                    example: [eletricista, encanador, pintor]
+
+  /providers/search:
+    get:
+      tags: [Providers]
+      summary: Buscar prestadores por nome/email do usuário
+      parameters:
+        - in: query
+          name: q
+          required: true
+          schema:
+            type: string
+            minLength: 2
+          description: Texto de busca (mínimo 2 caracteres)
+      responses:
+        "200":
+          description: Resultados da busca
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  providers:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Provider"
+
+  /providers/user/{userId}:
+    get:
+      tags: [Providers]
+      summary: Obter prestador pelo ID do usuário
+      security: []
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+          description: ID do usuário
+      responses:
+        "200":
+          description: Prestador encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Provider"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /providers/category/{category}:
+    get:
+      tags: [Providers]
+      summary: Listar prestadores por categoria (paginado)
+      security: []
+      parameters:
+        - in: path
+          name: category
+          required: true
+          schema:
+            type: string
+          description: Nome da categoria
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+      responses:
+        "200":
+          description: Prestadores da categoria
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  providers:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Provider"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+        "404":
+          description: Nenhum prestador encontrado para esta categoria
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /providers/{id}:
+    get:
+      tags: [Providers]
+      summary: Obter prestador por ID
+      security: []
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Prestador encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Provider"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    put:
+      tags: [Providers]
+      summary: Atualizar prestador
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProviderUpdateRequest"
+      responses:
+        "200":
+          description: Prestador atualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Provider"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Providers]
+      summary: Remover prestador
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Prestador removido
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /providers/{id}/stats:
+    get:
+      tags: [Providers]
+      summary: Estatísticas do prestador (rating, distribuição, tendência mensal)
+      security: []
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Estatísticas do prestador
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProviderStats"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /providers/{providerId}/reviews:
+    post:
+      tags: [Reviews]
+      summary: Criar avaliação para um prestador
+      parameters:
+        - $ref: "#/components/parameters/ProviderId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReviewCreateRequest"
+      responses:
+        "201":
+          description: Avaliação criada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Review"
+        "400":
+          description: Não pode avaliar a si mesmo
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "409":
+          description: Já avaliou este prestador
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      tags: [Reviews]
+      summary: Listar avaliações do prestador (paginado, com filtros)
+      security: []
+      parameters:
+        - $ref: "#/components/parameters/ProviderId"
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+        - in: query
+          name: rating
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 5
+          description: Filtrar por nota
+        - in: query
+          name: groupId
+          schema:
+            type: string
+          description: Filtrar por grupo
+        - in: query
+          name: startDate
+          schema:
+            type: string
+            format: date
+          description: Data inicial
+        - in: query
+          name: endDate
+          schema:
+            type: string
+            format: date
+          description: Data final
+      responses:
+        "200":
+          description: Avaliações do prestador
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reviews:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Review"
+                  averageRating:
+                    type: number
+                    format: float
+                    nullable: true
+                  reviewCount:
+                    type: integer
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Groups ─────────────────────────────────────────────────────────────
+  /groups:
+    post:
+      tags: [Groups]
+      summary: Criar grupo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GroupCreateRequest"
+      responses:
+        "201":
+          description: Grupo criado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Group"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+    get:
+      tags: [Groups]
+      summary: Listar todos os grupos (paginado, com busca)
+      parameters:
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+        - in: query
+          name: search
+          schema:
+            type: string
+          description: Busca por nome ou descrição
+      responses:
+        "200":
+          description: Lista de grupos
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  groups:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Group"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+
+  /groups/me:
+    get:
+      tags: [Groups]
+      summary: Listar grupos do usuário autenticado
+      parameters:
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+      responses:
+        "200":
+          description: Grupos do usuário
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  groups:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Group"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+
+  /groups/{id}:
+    get:
+      tags: [Groups]
+      summary: Obter detalhes do grupo (requer ser membro)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Grupo encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Group"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+    put:
+      tags: [Groups]
+      summary: Atualizar grupo (apenas dono)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GroupUpdateRequest"
+      responses:
+        "200":
+          description: Grupo atualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Group"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Groups]
+      summary: Excluir grupo (apenas dono)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Grupo excluído
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Grupo deletado com sucesso
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /groups/{id}/members:
+    post:
+      tags: [Groups]
+      summary: Adicionar membro ao grupo (apenas dono)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AddMemberRequest"
+      responses:
+        "201":
+          description: Membro adicionado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GroupMember"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /groups/{id}/members/{memberId}:
+    delete:
+      tags: [Groups]
+      summary: Remover membro do grupo (apenas dono)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+        - in: path
+          name: memberId
+          required: true
+          schema:
+            type: string
+          description: ID do usuário a ser removido
+      responses:
+        "200":
+          description: Membro removido
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Membro removido com sucesso
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /groups/{id}/leave:
+    delete:
+      tags: [Groups]
+      summary: Sair do grupo (o dono não pode sair)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Saiu do grupo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Voce saiu do grupo
+        "400":
+          description: Dono não pode sair sem transferir propriedade
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /groups/{id}/transfer:
+    put:
+      tags: [Groups]
+      summary: Transferir propriedade do grupo (apenas dono)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [newOwnerId]
+              properties:
+                newOwnerId:
+                  type: string
+                  description: ID do novo dono (deve ser membro do grupo)
+      responses:
+        "200":
+          description: Propriedade transferida
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Propriedade transferida com sucesso
+        "400":
+          description: Novo dono não é membro do grupo
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Invites ────────────────────────────────────────────────────────────
+  /groups/{id}/invites:
+    post:
+      tags: [Invites]
+      summary: Enviar convite para grupo (requer ser membro)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InviteCreateRequest"
+      responses:
+        "201":
+          description: Convite enviado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invite"
+        "400":
+          description: Não pode convidar a si mesmo ou usuário já é membro
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          description: Grupo ou usuário não encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    get:
+      tags: [Invites]
+      summary: Listar convites pendentes do grupo (requer ser membro)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Convites pendentes do grupo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  invites:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Invite"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /invites/me:
+    get:
+      tags: [Invites]
+      summary: Listar convites pendentes do usuário autenticado
+      responses:
+        "200":
+          description: Convites pendentes
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  invites:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Invite"
+
+  /invites/{id}/accept:
+    put:
+      tags: [Invites]
+      summary: Aceitar convite
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Convite aceito
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Convite aceito! Voce agora e membro do grupo."
+                  invite:
+                    $ref: "#/components/schemas/Invite"
+        "400":
+          description: Convite já respondido
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /invites/{id}/reject:
+    put:
+      tags: [Invites]
+      summary: Recusar convite
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Convite recusado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Convite recusado.
+                  invite:
+                    $ref: "#/components/schemas/Invite"
+        "400":
+          description: Convite já respondido
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Recommendations ───────────────────────────────────────────────────
+  /groups/{groupId}/recommendations:
+    post:
+      tags: [Recommendations]
+      summary: Criar recomendação no grupo
+      parameters:
+        - $ref: "#/components/parameters/GroupId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RecommendationCreateRequest"
+      responses:
+        "201":
+          description: Recomendação criada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Recommendation"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    get:
+      tags: [Recommendations]
+      summary: Listar recomendações do grupo (paginado)
+      parameters:
+        - $ref: "#/components/parameters/GroupId"
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+        - in: query
+          name: sort
+          schema:
+            type: string
+            enum: [score]
+          description: Ordenar por score de votos
+      responses:
+        "200":
+          description: Recomendações do grupo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  recommendations:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Recommendation"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /recommendations/{id}:
+    delete:
+      tags: [Recommendations]
+      summary: Remover recomendação (autor, admin do grupo ou admin do sistema)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Recomendação removida
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Votes ─────────────────────────────────────────────────────────────
+  /recommendations/{id}/vote:
+    post:
+      tags: [Votes]
+      summary: Votar em recomendação (UP ou DOWN)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [type]
+              properties:
+                type:
+                  type: string
+                  enum: [UP, DOWN]
+      responses:
+        "200":
+          description: Voto registrado (ou atualizado)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationVote"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Votes]
+      summary: Remover voto de recomendação
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Voto removido
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Comments ──────────────────────────────────────────────────────────
+  /recommendations/{id}/comments:
+    get:
+      tags: [Comments]
+      summary: Listar comentários de uma recomendação (paginado)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+      responses:
+        "200":
+          description: Comentários
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  comments:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/RecommendationComment"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+    post:
+      tags: [Comments]
+      summary: Adicionar comentário a uma recomendação
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [content]
+              properties:
+                content:
+                  type: string
+      responses:
+        "201":
+          description: Comentário criado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationComment"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /recommendations/comments/{commentId}:
+    put:
+      tags: [Comments]
+      summary: Editar comentário (apenas autor)
+      parameters:
+        - $ref: "#/components/parameters/CommentId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [content]
+              properties:
+                content:
+                  type: string
+      responses:
+        "200":
+          description: Comentário atualizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationComment"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Comments]
+      summary: Excluir comentário (autor, admin do grupo ou admin do sistema)
+      parameters:
+        - $ref: "#/components/parameters/CommentId"
+      responses:
+        "204":
+          description: Comentário removido
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Requests (pedidos de recomendação) ────────────────────────────────
+  /groups/{groupId}/requests:
+    post:
+      tags: [Requests]
+      summary: Criar pedido de recomendação no grupo
+      parameters:
+        - $ref: "#/components/parameters/GroupId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestCreateRequest"
+      responses:
+        "201":
+          description: Pedido criado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationRequest"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+    get:
+      tags: [Requests]
+      summary: Listar pedidos de recomendação do grupo (paginado)
+      parameters:
+        - $ref: "#/components/parameters/GroupId"
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+      responses:
+        "200":
+          description: Pedidos do grupo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  requests:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/RecommendationRequest"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /requests/{id}:
+    delete:
+      tags: [Requests]
+      summary: Excluir pedido (autor, admin do grupo ou admin do sistema)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Pedido removido
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /requests/{id}/resolve:
+    put:
+      tags: [Requests]
+      summary: Marcar pedido como resolvido
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Pedido marcado como resolvido
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationRequest"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Replies (respostas a pedidos) ─────────────────────────────────────
+  /requests/{id}/replies:
+    post:
+      tags: [Replies]
+      summary: Responder a um pedido de recomendação
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [content]
+              properties:
+                content:
+                  type: string
+      responses:
+        "201":
+          description: Resposta criada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RequestReply"
+        "400":
+          description: Pedido já resolvido
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /requests/replies/{replyId}:
+    delete:
+      tags: [Replies]
+      summary: Excluir resposta (autor, admin do grupo ou admin do sistema)
+      parameters:
+        - $ref: "#/components/parameters/ReplyId"
+      responses:
+        "204":
+          description: Resposta removida
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Reviews ────────────────────────────────────────────────────────────
+  /groups/{groupId}/reviews:
+    get:
+      tags: [Reviews]
+      summary: Listar avaliações de um grupo (paginado)
+      parameters:
+        - $ref: "#/components/parameters/GroupId"
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+        - in: query
+          name: rating
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 5
+          description: Filtrar por nota
+      responses:
+        "200":
+          description: Avaliações do grupo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reviews:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Review"
+                  averageRating:
+                    type: number
+                    format: float
+                    nullable: true
+                  reviewCount:
+                    type: integer
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /reviews/{id}:
+    put:
+      tags: [Reviews]
+      summary: Atualizar avaliação (apenas autor)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReviewUpdateRequest"
+      responses:
+        "200":
+          description: Avaliação atualizada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Review"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Reviews]
+      summary: Excluir avaliação (autor ou admin)
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Avaliação removida
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ─── Notifications ─────────────────────────────────────────────────────
+  /notifications:
+    get:
+      tags: [Notifications]
+      summary: Listar notificações do usuário autenticado
+      parameters:
+        - $ref: "#/components/parameters/Page"
+        - $ref: "#/components/parameters/Limit"
+      responses:
+        "200":
+          description: Lista de notificações
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaginatedNotifications"
+
+  /notifications/unread-count:
+    get:
+      tags: [Notifications]
+      summary: Quantidade de notificações não lidas
+      responses:
+        "200":
+          description: Contador
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  unreadCount:
+                    type: integer
+                    example: 3
+
+  /notifications/{id}/read:
+    put:
+      tags: [Notifications]
+      summary: Marcar notificação como lida
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Notificação atualizada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Notification"
+
+  /notifications/read-all:
+    put:
+      tags: [Notifications]
+      summary: Marcar todas como lidas
+      responses:
+        "200":
+          description: Operação concluída
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  updated:
+                    type: integer
+                    example: 10
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    Id:
+      in: path
+      name: id
+      required: true
+      schema:
+        type: string
+      description: ID do recurso
+    GroupId:
+      in: path
+      name: groupId
+      required: true
+      schema:
+        type: string
+      description: ID do grupo
+    ProviderId:
+      in: path
+      name: providerId
+      required: true
+      schema:
+        type: string
+      description: ID do prestador
+    CommentId:
+      in: path
+      name: commentId
+      required: true
+      schema:
+        type: string
+      description: ID do comentário
+    ReplyId:
+      in: path
+      name: replyId
+      required: true
+      schema:
+        type: string
+      description: ID da resposta
+    Page:
+      in: query
+      name: page
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    Limit:
+      in: query
+      name: limit
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 10
+
+  responses:
+    BadRequest:
+      description: Requisição inválida
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ValidationErrorResponse"
+    Unauthorized:
+      description: Não autenticado
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    Forbidden:
+      description: Sem permissão
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    NotFound:
+      description: Recurso não encontrado
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Não autorizado
+
+    ValidationErrorResponse:
+      type: object
+      properties:
+        errors:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+              msg:
+                type: string
+              path:
+                type: string
+              location:
+                type: string
+
+    Pagination:
+      type: object
+      properties:
+        total:
+          type: integer
+        page:
+          type: integer
+        limit:
+          type: integer
+        totalPages:
+          type: integer
+
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          example: clxyz123abc
+        name:
+          type: string
+          example: Lázaro
+        email:
+          type: string
+          format: email
+          example: lazaro@email.com
+        phone:
+          type: string
+          nullable: true
+        avatar:
+          type: string
+          nullable: true
+        age:
+          type: integer
+          nullable: true
+        gender:
+          type: string
+          enum: [MALE, FEMALE, OTHER]
+          nullable: true
+        role:
+          type: string
+          enum: [USER, ADMIN]
+          example: USER
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    UserUpdateRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        phone:
+          type: string
+        avatar:
+          type: string
+        age:
+          type: integer
+        gender:
+          type: string
+          enum: [MALE, FEMALE, OTHER]
+        password:
+          type: string
+          minLength: 6
+
+    Provider:
+      type: object
+      properties:
+        id:
+          type: string
+        userId:
+          type: string
+        category:
+          type: string
+          example: eletricista
+        bio:
+          type: string
+          nullable: true
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            email:
+              type: string
+            avatar:
+              type: string
+              nullable: true
+        averageRating:
+          type: number
+          format: float
+          nullable: true
+          example: 4.7
+        reviewCount:
+          type: integer
+          example: 25
+        createdAt:
+          type: string
+          format: date-time
+
+    ProviderCreateRequest:
+      type: object
+      required: [category]
+      properties:
+        category:
+          type: string
+          example: eletricista
+        bio:
+          type: string
+
+    ProviderUpdateRequest:
+      type: object
+      properties:
+        category:
+          type: string
+        bio:
+          type: string
+
+    ProviderStats:
+      type: object
+      properties:
+        providerId:
+          type: string
+        averageRating:
+          type: number
+          format: float
+          nullable: true
+        reviewCount:
+          type: integer
+        distribution:
+          type: object
+          properties:
+            "1":
+              type: integer
+            "2":
+              type: integer
+            "3":
+              type: integer
+            "4":
+              type: integer
+            "5":
+              type: integer
+        trend:
+          type: array
+          items:
+            type: object
+            properties:
+              month:
+                type: string
+                example: "2026-03"
+              count:
+                type: integer
+              avg:
+                type: number
+                format: float
+        recommendationCount:
+          type: integer
+
+    Group:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+          example: Condomínio Bloco A
+        description:
+          type: string
+          nullable: true
+        ownerId:
+          type: string
+        photoUrl:
+          type: string
+          nullable: true
+        owner:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+        members:
+          type: array
+          items:
+            $ref: "#/components/schemas/GroupMember"
+        _count:
+          type: object
+          properties:
+            members:
+              type: integer
+        createdAt:
+          type: string
+          format: date-time
+
+    GroupMember:
+      type: object
+      properties:
+        id:
+          type: string
+        userId:
+          type: string
+        groupId:
+          type: string
+        role:
+          type: string
+          enum: [MEMBER, ADMIN]
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            email:
+              type: string
+
+    GroupCreateRequest:
+      type: object
+      required: [name]
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+
+    GroupUpdateRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+
+    AddMemberRequest:
+      type: object
+      required: [userId]
+      properties:
+        userId:
+          type: string
+        role:
+          type: string
+          enum: [MEMBER, ADMIN]
+          default: MEMBER
+
+    Invite:
+      type: object
+      properties:
+        id:
+          type: string
+        groupId:
+          type: string
+        senderId:
+          type: string
+        receiverId:
+          type: string
+        status:
+          type: string
+          enum: [PENDING, ACCEPTED, REJECTED]
+        group:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+        sender:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+        receiver:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            email:
+              type: string
+        createdAt:
+          type: string
+          format: date-time
+
+    InviteCreateRequest:
+      type: object
+      required: [email]
+      properties:
+        email:
+          type: string
+          format: email
+
+    Recommendation:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+          nullable: true
+        authorId:
+          type: string
+        providerId:
+          type: string
+          nullable: true
+        groupId:
+          type: string
+        externalName:
+          type: string
+          nullable: true
+        externalCategory:
+          type: string
+          nullable: true
+        externalPhone:
+          type: string
+          nullable: true
+        author:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            avatar:
+              type: string
+              nullable: true
+        provider:
+          type: object
+          nullable: true
+          properties:
+            id:
+              type: string
+            category:
+              type: string
+            user:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+            averageRating:
+              type: number
+              format: float
+              nullable: true
+            reviewCount:
+              type: integer
+        upvotes:
+          type: integer
+        downvotes:
+          type: integer
+        score:
+          type: integer
+        userVote:
+          type: string
+          nullable: true
+          enum: [UP, DOWN, null]
+        _count:
+          type: object
+          properties:
+            comments:
+              type: integer
+        createdAt:
+          type: string
+          format: date-time
+
+    RecommendationCreateRequest:
+      type: object
+      required: [title]
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        providerId:
+          type: string
+          description: ID do prestador cadastrado (obrigatório se não informar dados externos)
+        externalName:
+          type: string
+          description: Nome do prestador externo (obrigatório se não informar providerId)
+        externalCategory:
+          type: string
+          description: Categoria do prestador externo
+        externalPhone:
+          type: string
+          description: Telefone do prestador externo (obrigatório para prestador externo)
+
+    RecommendationVote:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum: [UP, DOWN]
+        userId:
+          type: string
+        recommendationId:
+          type: string
+
+    RecommendationComment:
+      type: object
+      properties:
+        id:
+          type: string
+        content:
+          type: string
+        userId:
+          type: string
+        recommendationId:
+          type: string
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            avatar:
+              type: string
+              nullable: true
+        createdAt:
+          type: string
+          format: date-time
+
+    RecommendationRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+          nullable: true
+        category:
+          type: string
+          nullable: true
+        resolved:
+          type: boolean
+        authorId:
+          type: string
+        groupId:
+          type: string
+        author:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            avatar:
+              type: string
+              nullable: true
+        replies:
+          type: array
+          items:
+            $ref: "#/components/schemas/RequestReply"
+        _count:
+          type: object
+          properties:
+            replies:
+              type: integer
+        createdAt:
+          type: string
+          format: date-time
+
+    RequestCreateRequest:
+      type: object
+      required: [title]
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        category:
+          type: string
+
+    RequestReply:
+      type: object
+      properties:
+        id:
+          type: string
+        content:
+          type: string
+        userId:
+          type: string
+        requestId:
+          type: string
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+        createdAt:
+          type: string
+          format: date-time
+
+    Review:
+      type: object
+      properties:
+        id:
+          type: string
+        rating:
+          type: integer
+          minimum: 1
+          maximum: 5
+        comment:
+          type: string
+          nullable: true
+        userId:
+          type: string
+        providerId:
+          type: string
+        groupId:
+          type: string
+          nullable: true
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            avatar:
+              type: string
+              nullable: true
+        provider:
+          type: object
+          properties:
+            id:
+              type: string
+            category:
+              type: string
+        group:
+          type: object
+          nullable: true
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+        createdAt:
+          type: string
+          format: date-time
+
+    ReviewCreateRequest:
+      type: object
+      required: [rating]
+      properties:
+        rating:
+          type: integer
+          minimum: 1
+          maximum: 5
+        comment:
+          type: string
+        groupId:
+          type: string
+          description: ID do grupo (opcional, associa a avaliação ao grupo)
+
+    ReviewUpdateRequest:
+      type: object
+      properties:
+        rating:
+          type: integer
+          minimum: 1
+          maximum: 5
+        comment:
+          type: string
+
+    Notification:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum:
+            - INVITE_RECEIVED
+            - INVITE_ACCEPTED
+            - NEW_REVIEW
+            - NEW_RECOMMENDATION
+            - NEW_COMMENT
+            - NEW_REQUEST_REPLY
+            - GROUP_JOINED
+        message:
+          type: string
+          example: Você recebeu um convite para o grupo X
+        read:
+          type: boolean
+          example: false
+        resourceId:
+          type: string
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+
+    AuthRegisterRequest:
+      type: object
+      required: [name, email, password]
+      properties:
+        name:
+          type: string
+          example: Lázaro
+        email:
+          type: string
+          format: email
+          example: lazaro@email.com
+        password:
+          type: string
+          minLength: 6
+          example: "123456"
+
+    AuthLoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+
+    AuthResponse:
+      type: object
+      properties:
+        token:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        refreshToken:
+          type: string
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            email:
+              type: string
+            role:
+              type: string
+              enum: [USER, ADMIN]
+            avatar:
+              type: string
+              nullable: true
+            provider:
+              type: object
+              nullable: true
+              properties:
+                id:
+                  type: string
+                category:
+                  type: string
+
+    PaginatedNotifications:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Notification"
+        page:
+          type: integer
+        limit:
+          type: integer
+        total:
+          type: integer
