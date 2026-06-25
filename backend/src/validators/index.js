@@ -35,6 +35,15 @@ const updateUserRules = [
     body('name').optional().trim().escape().notEmpty().withMessage('Nome não pode ser vazio'),
     body('email').optional().isEmail().withMessage('Email inválido').normalizeEmail(),
     body('phone').optional({ values: 'falsy' }).trim(),
+    body('birthDate')
+        .optional({ values: 'falsy' })
+        .isISO8601()
+        .withMessage('Data de nascimento inválida')
+        .custom((val) => {
+            const d = new Date(val);
+            if (d > new Date()) throw new Error('Data de nascimento não pode estar no futuro');
+            return true;
+        }),
 ];
 
 const createProviderRules = [
@@ -102,7 +111,11 @@ const createRequestRules = [
     body('category').optional().trim(),
 ];
 
-const replyRules = [body('content').trim().notEmpty().withMessage('Resposta não pode ser vazia')];
+const replyRules = [
+    body('content').trim().notEmpty().withMessage('Resposta não pode ser vazia'),
+    body('phone').optional({ values: 'falsy' }).trim(),
+    body('providerId').optional({ values: 'falsy' }).trim(),
+];
 
 const inviteRules = [body('email').isEmail().withMessage('Email inválido')];
 

@@ -39,7 +39,12 @@ exports.getProvider = asyncHandler(async (req, res) => {
     if (!provider) return res.status(404).json({ error: 'Prestador não encontrado' });
 
     const { reviews, ...rest } = provider;
-    res.status(200).json({ ...rest, ...computeRating(reviews) });
+    res.status(200).json({
+        ...rest,
+        ...computeRating(reviews),
+        reviewsSummary: provider.reviewsSummary,
+        reviewsSummaryUpdatedAt: provider.reviewsSummaryUpdatedAt,
+    });
 });
 
 exports.getProviderByUserId = asyncHandler(async (req, res) => {
@@ -80,6 +85,14 @@ exports.searchProviders = asyncHandler(async (req, res) => {
 
 exports.getCategories = asyncHandler(async (req, res) => {
     res.status(200).json({ categories: CATEGORIES });
+});
+
+exports.getMyReviewForProvider = asyncHandler(async (req, res) => {
+    const review = await db.review.findFirst({
+        where: { providerId: req.params.id, userId: req.user.id },
+        select: { id: true, rating: true, comment: true, createdAt: true },
+    });
+    res.status(200).json({ review });
 });
 
 exports.getProviderStats = asyncHandler(async (req, res) => {

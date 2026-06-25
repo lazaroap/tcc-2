@@ -1,6 +1,7 @@
 const db = require('../config/database');
 const asyncHandler = require('../utils/asyncHandler');
 const { createNotification } = require('./notificationController');
+const { queueSummaryRegeneration } = require('../utils/aiSummary');
 
 exports.createReview = asyncHandler(async (req, res) => {
     const { providerId } = req.params;
@@ -39,6 +40,8 @@ exports.createReview = asyncHandler(async (req, res) => {
     });
 
     await createNotification(provider.userId, 'NEW_REVIEW', `${review.user.name} avaliou voce com ${rating} estrela(s)`, review.id);
+
+    queueSummaryRegeneration(providerId);
 
     res.status(201).json(review);
 });
@@ -165,6 +168,8 @@ exports.updateReview = asyncHandler(async (req, res) => {
         },
     });
 
+    if (data.comment !== undefined) queueSummaryRegeneration(review.providerId);
+
     res.status(200).json(updated);
 });
 
@@ -180,5 +185,6 @@ exports.deleteReview = asyncHandler(async (req, res) => {
     }
 
     await db.review.delete({ where: { id } });
+    queueSummaryRegeneration(review.providerId);
     res.status(204).send();
 });

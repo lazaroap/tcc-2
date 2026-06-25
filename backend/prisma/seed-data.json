@@ -7,12 +7,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(35) 94834-7789",
             "avatar": null,
-            "age": 27,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1998-12-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0002m7mdzv3wm30f",
@@ -21,12 +21,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(18) 94436-2079",
             "avatar": null,
-            "age": 33,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1992-07-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0003m7mdmumpgl22",
@@ -35,12 +35,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(47) 97691-9263",
             "avatar": null,
-            "age": 42,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1983-08-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0004m7mddnqufap7",
@@ -49,12 +49,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(43) 93693-9196",
             "avatar": null,
-            "age": 64,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1961-09-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0005m7mdxwslkjcs",
@@ -63,12 +63,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(59) 91073-9314",
             "avatar": null,
-            "age": 43,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1982-09-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0006m7mdm32gw4fb",
@@ -77,12 +77,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(37) 98095-6941",
             "avatar": null,
-            "age": 41,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1984-11-01T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0007m7md2ygromso",
@@ -91,12 +91,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(81) 94971-9081",
             "avatar": null,
-            "age": 28,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1998-04-05T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0008m7md339mfpv3",
@@ -105,12 +105,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(86) 98834-2207",
             "avatar": null,
-            "age": 21,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2004-08-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0009m7md02jpdb67",
@@ -119,12 +119,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(68) 91523-7167",
             "avatar": null,
-            "age": 20,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2006-05-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000am7md012mrbld",
@@ -133,12 +133,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(99) 99221-8135",
             "avatar": null,
-            "age": 43,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1982-06-21T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000bm7md1clzpdul",
@@ -147,12 +147,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(46) 92501-6159",
             "avatar": null,
-            "age": 41,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1984-10-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000cm7md3ssmvb8x",
@@ -161,12 +161,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(46) 95906-2816",
             "avatar": null,
-            "age": 20,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2006-02-27T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000dm7mdx1d2a8rc",
@@ -175,12 +175,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(28) 94799-5456",
             "avatar": null,
-            "age": 49,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1977-04-01T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000em7mdl0jduao5",
@@ -189,12 +189,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(87) 94924-3444",
             "avatar": null,
-            "age": 37,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1988-06-01T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000fm7mdjpr14nua",
@@ -203,12 +203,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(73) 93039-5983",
             "avatar": null,
-            "age": 20,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-06-26T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000gm7mdqqx5lx19",
@@ -217,12 +217,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(51) 93928-7129",
             "avatar": null,
-            "age": 50,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1976-05-16T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000hm7mdg52jywbu",
@@ -231,12 +231,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(75) 97051-6765",
             "avatar": null,
-            "age": 61,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1965-04-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000im7md17sygugd",
@@ -245,12 +245,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(76) 99774-4023",
             "avatar": null,
-            "age": 25,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2001-05-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000jm7mdjvlgeopd",
@@ -259,12 +259,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(73) 92059-5148",
             "avatar": null,
-            "age": 40,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1986-04-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000km7mdlt00m1pf",
@@ -273,12 +273,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(78) 95691-4769",
             "avatar": null,
-            "age": 40,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1985-10-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000lm7md1y77zil0",
@@ -287,12 +287,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(38) 94784-8329",
             "avatar": null,
-            "age": 26,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-12-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000mm7mdxg2rm6ek",
@@ -301,12 +301,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(68) 99265-2707",
             "avatar": null,
-            "age": 33,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1992-12-05T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000nm7mdaiej5242",
@@ -315,12 +315,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(84) 97562-1974",
             "avatar": null,
-            "age": 63,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1962-11-02T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000om7mdw7xorl2e",
@@ -329,12 +329,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(83) 98596-2828",
             "avatar": null,
-            "age": 34,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1992-04-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000pm7mdngfctu6f",
@@ -343,12 +343,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(50) 92620-4523",
             "avatar": null,
-            "age": 55,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1971-04-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000qm7mdx25o553t",
@@ -357,12 +357,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(19) 93915-6069",
             "avatar": null,
-            "age": 27,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1998-07-09T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000rm7mdtqi0cpd6",
@@ -371,12 +371,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(63) 97692-8358",
             "avatar": null,
-            "age": 55,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1971-02-12T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000sm7mdqlumi42c",
@@ -385,12 +385,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(95) 93400-1918",
             "avatar": null,
-            "age": 38,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1988-03-21T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000tm7mdrnuzjfts",
@@ -399,12 +399,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(21) 91100-1456",
             "avatar": null,
-            "age": 24,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2001-09-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000um7md3il59v7v",
@@ -413,12 +413,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(44) 95170-3151",
             "avatar": null,
-            "age": 22,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2004-05-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000vm7mdcousppfg",
@@ -427,12 +427,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(58) 99835-5539",
             "avatar": null,
-            "age": 61,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1964-06-02T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000wm7mduxmixqsz",
@@ -441,12 +441,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(32) 94653-7418",
             "avatar": null,
-            "age": 24,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2001-07-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000xm7mda9nzpo6k",
@@ -455,12 +455,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(11) 91318-5469",
             "avatar": null,
-            "age": 31,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1994-09-11T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000ym7md26c9kfv8",
@@ -469,12 +469,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(88) 92021-7041",
             "avatar": null,
-            "age": 65,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1961-05-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk000zm7md5ddmuthm",
@@ -483,12 +483,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(14) 95236-9837",
             "avatar": null,
-            "age": 18,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2008-03-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0010m7md1zwjprx9",
@@ -497,12 +497,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(80) 95763-8029",
             "avatar": null,
-            "age": 20,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-07-03T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0011m7mdih4f6sol",
@@ -511,12 +511,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(56) 98193-9275",
             "avatar": null,
-            "age": 55,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1970-08-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0012m7mdw6ulphxx",
@@ -525,12 +525,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(77) 96724-8804",
             "avatar": null,
-            "age": 25,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2001-04-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0013m7mdzyosehsn",
@@ -539,12 +539,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(92) 91789-3525",
             "avatar": null,
-            "age": 50,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1975-12-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0014m7mdnru7a2af",
@@ -553,12 +553,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(30) 99444-8057",
             "avatar": null,
-            "age": 36,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1990-04-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0015m7mdncyo9c5j",
@@ -567,12 +567,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(81) 97148-9724",
             "avatar": null,
-            "age": 47,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1978-11-12T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0016m7mdo742oln9",
@@ -581,12 +581,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(99) 97311-1075",
             "avatar": null,
-            "age": 25,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2001-04-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0017m7mdkfy7c027",
@@ -595,12 +595,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(87) 95110-5618",
             "avatar": null,
-            "age": 41,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1985-02-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0018m7md8xilugr9",
@@ -609,12 +609,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(32) 93153-4343",
             "avatar": null,
-            "age": 50,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1975-08-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0019m7mdf4wcd15g",
@@ -623,12 +623,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(87) 92214-4179",
             "avatar": null,
-            "age": 61,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1964-10-03T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001am7mdkmnuhtjb",
@@ -637,12 +637,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(52) 96149-5048",
             "avatar": null,
-            "age": 42,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1984-02-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001bm7mdimhvhar5",
@@ -651,12 +651,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(48) 91846-3577",
             "avatar": null,
-            "age": 55,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1970-08-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001cm7mdo80wgje7",
@@ -665,12 +665,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(97) 93365-8545",
             "avatar": null,
-            "age": 31,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1995-04-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001dm7mdw63uiw2u",
@@ -679,12 +679,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(93) 95827-6505",
             "avatar": null,
-            "age": 56,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1969-06-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001em7md8yz9z5am",
@@ -693,12 +693,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(95) 93518-2282",
             "avatar": null,
-            "age": 49,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1977-04-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001fm7md3bvrxt8j",
@@ -707,12 +707,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(86) 98562-6605",
             "avatar": null,
-            "age": 61,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1964-07-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001gm7mdgbfpw5p9",
@@ -721,12 +721,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(44) 99903-5091",
             "avatar": null,
-            "age": 62,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1963-07-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001hm7mdatm2jokc",
@@ -735,12 +735,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(64) 99202-4356",
             "avatar": null,
-            "age": 47,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1979-01-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001im7mdxx911jsq",
@@ -749,12 +749,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(98) 92565-5116",
             "avatar": null,
-            "age": 64,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1961-12-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001jm7mdm9vwwv6o",
@@ -763,12 +763,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(39) 99596-4087",
             "avatar": null,
-            "age": 56,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1969-11-28T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001km7mdxoiw2z87",
@@ -777,12 +777,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(62) 91804-6428",
             "avatar": null,
-            "age": 31,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1994-11-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001lm7mdcsh7z246",
@@ -791,12 +791,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(25) 91608-4709",
             "avatar": null,
-            "age": 18,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2007-09-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001mm7mdwvxvwcbc",
@@ -805,12 +805,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(38) 99875-4668",
             "avatar": null,
-            "age": 44,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1981-07-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001nm7md2luesn9y",
@@ -819,12 +819,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(47) 96486-7120",
             "avatar": null,
-            "age": 26,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-07-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001om7mdi37a38z2",
@@ -833,12 +833,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(50) 96323-2162",
             "avatar": null,
-            "age": 56,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1970-04-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001pm7mdvupoc454",
@@ -847,12 +847,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(52) 91580-6092",
             "avatar": null,
-            "age": 38,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1987-06-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001qm7mdc0j4kjo9",
@@ -861,12 +861,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(83) 91166-9349",
             "avatar": null,
-            "age": 22,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2004-05-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001rm7mdch4ai6md",
@@ -875,12 +875,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(86) 98715-4262",
             "avatar": null,
-            "age": 20,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-12-02T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001sm7mdhy6gp72a",
@@ -889,12 +889,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(98) 94814-7408",
             "avatar": null,
-            "age": 53,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1973-03-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001tm7mdrfd41dmz",
@@ -903,12 +903,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(47) 98492-8450",
             "avatar": null,
-            "age": 39,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1986-08-05T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001um7mdkkgnchd0",
@@ -917,12 +917,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(18) 95711-2671",
             "avatar": null,
-            "age": 34,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1991-09-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001vm7md35mfdn5k",
@@ -931,12 +931,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(29) 99086-1087",
             "avatar": null,
-            "age": 31,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1994-09-11T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001wm7md6godwzi2",
@@ -945,12 +945,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(21) 94748-7669",
             "avatar": null,
-            "age": 50,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1976-01-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximk001xm7mdyrt1b9xu",
@@ -959,12 +959,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(90) 98211-6586",
             "avatar": null,
-            "age": 25,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2000-10-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximl001ym7mdrxddojwd",
@@ -973,12 +973,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(72) 96419-1118",
             "avatar": null,
-            "age": 58,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1967-12-26T00:00:00.000Z"
         },
         {
             "id": "cmoepximl001zm7mdoy7gckgn",
@@ -987,12 +987,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(23) 98241-5099",
             "avatar": null,
-            "age": 47,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1978-08-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0020m7mdzz271xox",
@@ -1001,12 +1001,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(77) 99535-2543",
             "avatar": null,
-            "age": 27,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-01-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0021m7mdv7amxd4c",
@@ -1015,12 +1015,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(89) 93513-4954",
             "avatar": null,
-            "age": 42,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1984-05-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0022m7mdlqxr6jgo",
@@ -1029,12 +1029,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(37) 95227-7486",
             "avatar": null,
-            "age": 20,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-09-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0023m7mdqv940yil",
@@ -1043,12 +1043,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(45) 94209-5198",
             "avatar": null,
-            "age": 18,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2008-03-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0024m7mddur31jmm",
@@ -1057,12 +1057,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(57) 97531-5107",
             "avatar": null,
-            "age": 52,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1973-07-27T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0025m7mdfbfm529a",
@@ -1071,12 +1071,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(51) 94742-9235",
             "avatar": null,
-            "age": 40,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1985-09-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0026m7mdz9uc5jdr",
@@ -1085,12 +1085,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(29) 96103-1738",
             "avatar": null,
-            "age": 26,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-10-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0027m7mdzwuu0uw3",
@@ -1099,12 +1099,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(29) 94568-4516",
             "avatar": null,
-            "age": 27,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-05-21T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0028m7mdd6vo5jwr",
@@ -1113,12 +1113,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(55) 96496-7095",
             "avatar": null,
-            "age": 24,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2002-03-01T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0029m7mdkkb31xxc",
@@ -1127,12 +1127,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(91) 98229-8954",
             "avatar": null,
-            "age": 60,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1966-04-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002am7mdruau86n5",
@@ -1141,12 +1141,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(89) 96253-7101",
             "avatar": null,
-            "age": 20,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2006-01-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002bm7mdl5sahcre",
@@ -1155,12 +1155,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(64) 91593-3354",
             "avatar": null,
-            "age": 42,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1983-07-05T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002cm7mdp5wwmrar",
@@ -1169,12 +1169,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(53) 94320-6595",
             "avatar": null,
-            "age": 18,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2007-06-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002dm7mdbrvpubuk",
@@ -1183,12 +1183,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(21) 93577-7493",
             "avatar": null,
-            "age": 49,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1976-09-19T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002em7mdoz0a8cz1",
@@ -1197,12 +1197,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(82) 96588-4947",
             "avatar": null,
-            "age": 30,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1995-11-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002fm7mdgqnrf4oh",
@@ -1211,12 +1211,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(60) 98181-3730",
             "avatar": null,
-            "age": 45,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1980-11-25T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002gm7md0yuck82z",
@@ -1225,12 +1225,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(98) 96510-2091",
             "avatar": null,
-            "age": 64,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1961-11-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002hm7mdzgbztenr",
@@ -1239,12 +1239,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(96) 95032-8424",
             "avatar": null,
-            "age": 21,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2004-06-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002im7mdedhk5q5x",
@@ -1253,12 +1253,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(47) 95284-5023",
             "avatar": null,
-            "age": 65,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1961-02-27T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002jm7mdrysjb0oh",
@@ -1267,12 +1267,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(63) 95590-6802",
             "avatar": null,
-            "age": 53,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1973-03-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002km7mdttbqxksz",
@@ -1281,12 +1281,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(64) 96089-1534",
             "avatar": null,
-            "age": 39,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1986-12-03T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002lm7mdimkwdkzf",
@@ -1295,12 +1295,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(21) 98157-7777",
             "avatar": null,
-            "age": 65,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1960-11-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002mm7md1lcglhqv",
@@ -1309,12 +1309,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(31) 94610-6010",
             "avatar": null,
-            "age": 36,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1989-09-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002nm7mdp892dm5v",
@@ -1323,12 +1323,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(47) 97737-8233",
             "avatar": null,
-            "age": 61,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1965-05-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002om7md9nn79ahn",
@@ -1337,12 +1337,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(37) 93836-7919",
             "avatar": null,
-            "age": 23,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2003-03-11T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002pm7mdhk5f6x8l",
@@ -1351,12 +1351,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(85) 97282-5426",
             "avatar": null,
-            "age": 24,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2001-06-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002qm7md704024me",
@@ -1365,12 +1365,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(33) 98446-9210",
             "avatar": null,
-            "age": 21,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-04-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002rm7md6qj7pak9",
@@ -1379,12 +1379,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(71) 98009-7835",
             "avatar": null,
-            "age": 48,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1978-05-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002sm7md3mvctl1e",
@@ -1393,12 +1393,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(77) 91180-2750",
             "avatar": null,
-            "age": 37,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1989-02-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002tm7md23w33vql",
@@ -1407,12 +1407,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(63) 99002-8099",
             "avatar": null,
-            "age": 30,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1995-11-12T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002um7mdzla7u5p3",
@@ -1421,12 +1421,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(71) 92532-9023",
             "avatar": null,
-            "age": 44,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1981-08-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002vm7mdxvt0lttw",
@@ -1435,12 +1435,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(50) 94901-5381",
             "avatar": null,
-            "age": 62,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1963-07-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002wm7mduli78w22",
@@ -1449,12 +1449,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(39) 94062-7724",
             "avatar": null,
-            "age": 39,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1986-07-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002xm7md3ietf6a0",
@@ -1463,12 +1463,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(96) 97803-5743",
             "avatar": null,
-            "age": 27,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1998-08-28T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002ym7md1p1htj7m",
@@ -1477,12 +1477,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(57) 94901-6029",
             "avatar": null,
-            "age": 24,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2002-03-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl002zm7mdqr9fbap8",
@@ -1491,12 +1491,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(83) 98801-1781",
             "avatar": null,
-            "age": 51,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1974-07-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0030m7mdfz8dhtxt",
@@ -1505,12 +1505,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(82) 92889-7870",
             "avatar": null,
-            "age": 26,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-11-26T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0031m7mdicadhfgf",
@@ -1519,12 +1519,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(26) 97501-8189",
             "avatar": null,
-            "age": 29,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1996-10-25T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0032m7md10cxs8mh",
@@ -1533,12 +1533,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(68) 94097-8484",
             "avatar": null,
-            "age": 39,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1987-05-25T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0033m7mdgj1hgqui",
@@ -1547,12 +1547,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(98) 93614-4629",
             "avatar": null,
-            "age": 51,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1975-02-03T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0034m7mdnafj5cki",
@@ -1561,12 +1561,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(96) 91731-7367",
             "avatar": null,
-            "age": 38,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1987-06-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0035m7mdxfvlj6c6",
@@ -1575,12 +1575,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(62) 92341-7583",
             "avatar": null,
-            "age": 33,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1992-11-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0036m7md30wi3l51",
@@ -1589,12 +1589,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(24) 93824-4343",
             "avatar": null,
-            "age": 39,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1987-05-12T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0037m7mdabaodkaj",
@@ -1603,12 +1603,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(87) 93914-3658",
             "avatar": null,
-            "age": 43,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1982-09-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0038m7mdkc29m0sy",
@@ -1617,12 +1617,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(37) 96677-1460",
             "avatar": null,
-            "age": 34,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1991-11-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0039m7mdegbi0mwp",
@@ -1631,12 +1631,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(86) 98295-9573",
             "avatar": null,
-            "age": 23,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2002-07-21T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003am7mdqaeqi0fg",
@@ -1645,12 +1645,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(58) 93084-8351",
             "avatar": null,
-            "age": 27,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-04-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003bm7mdnunnpry9",
@@ -1659,12 +1659,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(39) 94287-7859",
             "avatar": null,
-            "age": 26,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-06-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003cm7md7gjex7ep",
@@ -1673,12 +1673,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(24) 98260-8405",
             "avatar": null,
-            "age": 18,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2007-11-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003dm7mdzdxmld5l",
@@ -1687,12 +1687,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(75) 92049-5843",
             "avatar": null,
-            "age": 58,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1968-05-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003em7mdd8ou3tso",
@@ -1701,12 +1701,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(20) 93737-5736",
             "avatar": null,
-            "age": 52,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1974-03-19T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003fm7mdijp7sbif",
@@ -1715,12 +1715,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(36) 92588-6724",
             "avatar": null,
-            "age": 44,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1982-05-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003gm7mdqvki0o6f",
@@ -1729,12 +1729,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(26) 97199-5882",
             "avatar": null,
-            "age": 25,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2000-12-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003hm7mdvkv2murp",
@@ -1743,12 +1743,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(15) 92438-3745",
             "avatar": null,
-            "age": 42,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1983-06-27T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003im7mdgcouw4c3",
@@ -1757,12 +1757,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(40) 99405-3610",
             "avatar": null,
-            "age": 34,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1991-11-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003jm7mdsf4lbvik",
@@ -1771,12 +1771,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(16) 96347-7613",
             "avatar": null,
-            "age": 24,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2002-02-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003km7md9s25n37i",
@@ -1785,12 +1785,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(61) 98017-4065",
             "avatar": null,
-            "age": 61,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1965-02-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003lm7mduksqudoz",
@@ -1799,12 +1799,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(84) 95954-8051",
             "avatar": null,
-            "age": 19,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2007-05-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003mm7mdonz603ak",
@@ -1813,12 +1813,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(69) 98045-3614",
             "avatar": null,
-            "age": 34,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1991-08-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003nm7md1x6vvxli",
@@ -1827,12 +1827,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(66) 93197-5704",
             "avatar": null,
-            "age": 51,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1975-03-25T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003om7mdmmy5x9sw",
@@ -1841,12 +1841,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(52) 95463-4638",
             "avatar": null,
-            "age": 42,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1983-11-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003pm7mdd552rme0",
@@ -1855,12 +1855,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(51) 92540-4733",
             "avatar": null,
-            "age": 61,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1964-07-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003qm7mdpxaihw6w",
@@ -1869,12 +1869,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(57) 94884-9441",
             "avatar": null,
-            "age": 45,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1980-12-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003rm7mdsnymrz9m",
@@ -1883,12 +1883,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(98) 92583-1165",
             "avatar": null,
-            "age": 31,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1994-12-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003sm7md4i75punz",
@@ -1897,12 +1897,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(49) 92804-9731",
             "avatar": null,
-            "age": 23,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2002-06-25T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003tm7mdu766yvs5",
@@ -1911,12 +1911,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(51) 92470-3840",
             "avatar": null,
-            "age": 42,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1984-04-01T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003um7mdwk6s6o94",
@@ -1925,12 +1925,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(77) 96497-8603",
             "avatar": null,
-            "age": 22,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2004-01-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003vm7mdb5fm4kja",
@@ -1939,12 +1939,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(92) 91411-9442",
             "avatar": null,
-            "age": 50,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1976-05-03T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003wm7md1h1mkmhr",
@@ -1953,12 +1953,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(63) 91817-7055",
             "avatar": null,
-            "age": 24,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2002-05-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003xm7mdoglemxj6",
@@ -1967,12 +1967,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(33) 97042-9923",
             "avatar": null,
-            "age": 50,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1976-03-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003ym7md1kc7fr3i",
@@ -1981,12 +1981,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(78) 98127-9770",
             "avatar": null,
-            "age": 45,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1980-08-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximl003zm7md2dvqjvi9",
@@ -1995,12 +1995,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(93) 98499-2925",
             "avatar": null,
-            "age": 52,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1973-06-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0040m7mdd9hxg62v",
@@ -2009,12 +2009,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(21) 99690-2285",
             "avatar": null,
-            "age": 36,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1989-10-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0041m7mdr4z29g3v",
@@ -2023,12 +2023,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(29) 92095-9028",
             "avatar": null,
-            "age": 33,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1992-10-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0042m7mdycljnm6d",
@@ -2037,12 +2037,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(41) 92538-2410",
             "avatar": null,
-            "age": 58,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1968-05-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0043m7mdxpum7g2u",
@@ -2051,12 +2051,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(93) 97106-1526",
             "avatar": null,
-            "age": 42,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1984-04-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0044m7mdcwmdr9s2",
@@ -2065,12 +2065,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(42) 97953-2869",
             "avatar": null,
-            "age": 19,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2006-11-11T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0045m7md3fbw41en",
@@ -2079,12 +2079,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(82) 93572-5991",
             "avatar": null,
-            "age": 20,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2006-01-09T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0046m7mdbg4ui0u9",
@@ -2093,12 +2093,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(97) 96129-8653",
             "avatar": null,
-            "age": 54,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1972-05-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0047m7mdwk51xxoi",
@@ -2107,12 +2107,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(44) 91324-6800",
             "avatar": null,
-            "age": 28,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1998-03-22T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0048m7mdzjgb6w6m",
@@ -2121,12 +2121,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(65) 94199-5085",
             "avatar": null,
-            "age": 48,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1977-09-25T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0049m7mdo1pkifiu",
@@ -2135,12 +2135,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(59) 96422-8799",
             "avatar": null,
-            "age": 27,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1999-01-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004am7mdqe6e142h",
@@ -2149,12 +2149,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(51) 99408-3004",
             "avatar": null,
-            "age": 55,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1971-03-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004bm7mde7bb66ty",
@@ -2163,12 +2163,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(97) 95059-5689",
             "avatar": null,
-            "age": 54,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1971-11-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004cm7mdzgz5ub7g",
@@ -2177,12 +2177,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(17) 97036-3697",
             "avatar": null,
-            "age": 56,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1970-02-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004dm7mdiwjoasho",
@@ -2191,12 +2191,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(77) 99500-4750",
             "avatar": null,
-            "age": 34,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1991-06-19T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004em7mdryp5yd3g",
@@ -2205,12 +2205,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(74) 97984-7492",
             "avatar": null,
-            "age": 40,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1985-10-20T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004fm7mdgxxufvx5",
@@ -2219,12 +2219,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(56) 92397-3467",
             "avatar": null,
-            "age": 25,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2000-11-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004gm7mdmhc0it2z",
@@ -2233,12 +2233,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(20) 91576-3360",
             "avatar": null,
-            "age": 48,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1978-04-26T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004hm7mdbnjrn82r",
@@ -2247,12 +2247,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(54) 96162-5222",
             "avatar": null,
-            "age": 21,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2004-08-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004im7mdpsmsqfim",
@@ -2261,12 +2261,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(11) 97709-6953",
             "avatar": null,
-            "age": 25,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2000-09-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004jm7mdpv2qlrvj",
@@ -2275,12 +2275,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(89) 92415-6431",
             "avatar": null,
-            "age": 57,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1969-03-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004km7mdezgk8fk6",
@@ -2289,12 +2289,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(82) 95402-4734",
             "avatar": null,
-            "age": 65,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1960-11-13T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004lm7mdemu3d5yn",
@@ -2303,12 +2303,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(61) 95136-1015",
             "avatar": null,
-            "age": 23,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2003-02-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004mm7md3lshmga6",
@@ -2317,12 +2317,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(89) 93944-7459",
             "avatar": null,
-            "age": 48,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1977-12-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004nm7mdui49ftz5",
@@ -2331,12 +2331,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(89) 98981-2975",
             "avatar": null,
-            "age": 22,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2003-10-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004om7md4lybhwy0",
@@ -2345,12 +2345,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(14) 91865-7210",
             "avatar": null,
-            "age": 40,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1986-04-17T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004pm7md6ygvd1tb",
@@ -2359,12 +2359,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(35) 92990-7127",
             "avatar": null,
-            "age": 62,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1963-11-05T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004qm7mdbvvwqehg",
@@ -2373,12 +2373,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(48) 95466-6876",
             "avatar": null,
-            "age": 32,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1994-03-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004rm7mdj7l2v6w4",
@@ -2387,12 +2387,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(33) 97986-3149",
             "avatar": null,
-            "age": 37,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1989-04-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004sm7md3n79khr7",
@@ -2401,12 +2401,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(17) 96739-1259",
             "avatar": null,
-            "age": 43,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1982-12-16T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004tm7mdujmphidy",
@@ -2415,12 +2415,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(38) 99799-9521",
             "avatar": null,
-            "age": 55,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1971-04-02T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004um7mdpyv5m2sb",
@@ -2429,12 +2429,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(42) 92429-6528",
             "avatar": null,
-            "age": 56,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1970-03-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004vm7mdjwurvlj1",
@@ -2443,12 +2443,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(38) 95724-9876",
             "avatar": null,
-            "age": 18,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2008-03-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004wm7mdf1tcdseg",
@@ -2457,12 +2457,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(93) 93478-1885",
             "avatar": null,
-            "age": 56,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1969-08-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004xm7mdn35fjcs0",
@@ -2471,12 +2471,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(14) 99527-9303",
             "avatar": null,
-            "age": 45,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1981-02-05T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004ym7mdg9wxcpw1",
@@ -2485,12 +2485,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(60) 98794-1431",
             "avatar": null,
-            "age": 54,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1971-09-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximl004zm7mdq5rd72yc",
@@ -2499,12 +2499,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(85) 96644-5652",
             "avatar": null,
-            "age": 47,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1978-07-14T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0050m7mdlkbqe24u",
@@ -2513,12 +2513,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(95) 94052-3273",
             "avatar": null,
-            "age": 57,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1969-01-23T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0051m7md5m8yclv1",
@@ -2527,12 +2527,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(58) 91701-1054",
             "avatar": null,
-            "age": 45,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1980-07-24T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0052m7md5iocqtqf",
@@ -2541,12 +2541,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(18) 94926-1911",
             "avatar": null,
-            "age": 60,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1965-07-27T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0053m7mdt50rel9j",
@@ -2555,12 +2555,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(47) 98714-9918",
             "avatar": null,
-            "age": 37,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1989-03-15T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0054m7mdi1zoxhn4",
@@ -2569,12 +2569,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(12) 96911-3133",
             "avatar": null,
-            "age": 59,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1966-08-06T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0055m7mdx9gl62vn",
@@ -2583,12 +2583,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(97) 99500-8811",
             "avatar": null,
-            "age": 20,
             "gender": "MALE",
             "role": "ADMIN",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-12-09T00:00:00.000Z"
         },
         {
             "id": "cmoepximk0000m7md3gzgrkmr",
@@ -2597,12 +2597,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(22) 93805-4200",
             "avatar": null,
-            "age": 35,
             "gender": "MALE",
             "role": "ADMIN",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1990-12-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0056m7mdh38ij59g",
@@ -2611,12 +2611,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(76) 97574-9224",
             "avatar": null,
-            "age": 51,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1974-12-18T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0057m7mdr3fpremq",
@@ -2625,12 +2625,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(65) 92358-8333",
             "avatar": null,
-            "age": 29,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1997-02-04T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0058m7mdgh44jwvj",
@@ -2639,12 +2639,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(33) 95332-6397",
             "avatar": null,
-            "age": 31,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1994-11-26T00:00:00.000Z"
         },
         {
             "id": "cmoepximl0059m7md5hujn4x6",
@@ -2653,12 +2653,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(54) 95231-5757",
             "avatar": null,
-            "age": 57,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1968-10-11T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005am7mdcxf7tuqz",
@@ -2667,12 +2667,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(43) 98094-9207",
             "avatar": null,
-            "age": 42,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1983-10-16T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005bm7mdnzxb0tr2",
@@ -2681,12 +2681,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(93) 93402-3846",
             "avatar": null,
-            "age": 60,
             "gender": "OTHER",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1966-01-11T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005cm7md5bg1tdij",
@@ -2695,12 +2695,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(87) 91229-8476",
             "avatar": null,
-            "age": 28,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1998-04-16T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005dm7md8j8jfj0m",
@@ -2709,12 +2709,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(46) 94710-6213",
             "avatar": null,
-            "age": 20,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "2005-10-02T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005em7mdetz7zc0d",
@@ -2723,12 +2723,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(52) 97374-7249",
             "avatar": null,
-            "age": 64,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1962-03-07T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005fm7mdhxs2wqfg",
@@ -2737,12 +2737,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(46) 96787-7383",
             "avatar": null,
-            "age": 30,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1995-09-16T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005gm7md4lahembv",
@@ -2751,12 +2751,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(56) 96575-3054",
             "avatar": null,
-            "age": 34,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1991-11-08T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005hm7mdiuf22g6v",
@@ -2765,12 +2765,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(16) 94179-9827",
             "avatar": null,
-            "age": 59,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1966-06-10T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005im7md5xkcphr9",
@@ -2779,12 +2779,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(44) 91420-1676",
             "avatar": null,
-            "age": 65,
             "gender": "FEMALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1960-12-16T00:00:00.000Z"
         },
         {
             "id": "cmoepximl005jm7mdrcqwlalh",
@@ -2793,12 +2793,12 @@
             "password": "$2b$10$FE6c6CEgJV35yXMi9wMnf.jgxWypTYBHrIRdsoyd7UThW4Vl87Zbm",
             "phone": "(56) 98291-8111",
             "avatar": null,
-            "age": 65,
             "gender": "MALE",
             "role": "USER",
             "refreshToken": null,
             "createdAt": "2026-04-25T19:14:26.828Z",
-            "updatedAt": "2026-04-25T19:14:26.828Z"
+            "updatedAt": "2026-04-25T19:14:26.828Z",
+            "birthDate": "1960-11-08T00:00:00.000Z"
         }
     ],
     "providers": [
@@ -2807,350 +2807,450 @@
             "userId": "cmoepximk0000m7md3gzgrkmr",
             "category": "Encanador",
             "bio": "Profissional com mais de 2 anos de experiencia em encanador.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador é reconhecido pela qualidade do serviço, competência e rapidez na resolução de problemas. A comunicação foi apontada como aspecto que poderia melhorar.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:18.510Z"
         },
         {
             "id": "cmoepxink005lm7md9pbnh2vm",
             "userId": "cmoepximk0001m7mddasxuqwk",
             "category": "Eletricista",
             "bio": "Profissional com mais de 2 anos de experiencia em eletricista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador se destaca pela qualidade e rapidez no trabalho, com execução organizada e dedicação profissional que supera expectativas. A maioria dos clientes expressa satisfação e recomenda o serviço para outras pessoas.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:48.483Z"
         },
         {
             "id": "cmoepxink005mm7md5uil8ekw",
             "userId": "cmoepximk0002m7mdzv3wm30f",
             "category": "Pintor",
             "bio": "Profissional com mais de 7 anos de experiencia em pintor.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Oferece serviço rápido e organizado com profissionalismo e dedicação. A comunicação poderia ser melhorada.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:53:38.410Z"
         },
         {
             "id": "cmoepxink005nm7md0chzv3et",
             "userId": "cmoepximk0003m7mdmumpgl22",
             "category": "Pedreiro",
             "bio": "Profissional com mais de 10 anos de experiencia em pedreiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador é reconhecido pela qualidade do trabalho, competência profissional e atendimento atencioso, gerando satisfação e recomendações de clientes. Há sugestão de melhoria na comunicação durante o processo de atendimento.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:53:30.503Z"
         },
         {
             "id": "cmoepxink005om7mdxr2vgfy9",
             "userId": "cmoepximk0004m7mddnqufap7",
             "category": "Marceneiro",
             "bio": "Profissional com mais de 3 anos de experiencia em marceneiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador competente, pontual e atencioso que entrega serviços de qualidade com organização e transparência. Profissional honesto reconhecido pela eficiência e cumprimento dos prazos.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:49:18.641Z"
         },
         {
             "id": "cmoepxink005pm7mdqzkt8fnx",
             "userId": "cmoepximk0005m7mdxwslkjcs",
             "category": "Jardineiro",
             "bio": "Profissional com mais de 5 anos de experiencia em jardineiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Trabalho de qualidade bem executado e recomendado por clientes. Poderia melhorar na comunicação.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:53:23.572Z"
         },
         {
             "id": "cmoepxink005qm7md7cjm4bx2",
             "userId": "cmoepximk0006m7mdm32gw4fb",
             "category": "Diarista",
             "bio": "Profissional com mais de 10 anos de experiencia em diarista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador realiza trabalho de qualidade, cumpre prazos e demonstra dedicação ao detalhe. A comunicação com clientes é apontada como aspecto a melhorar.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:27.469Z"
         },
         {
             "id": "cmoepxink005rm7mdo4k1hgj0",
             "userId": "cmoepximk0007m7md2ygromso",
             "category": "Tecnico de Informatica",
             "bio": "Profissional com mais de 7 anos de experiencia em tecnico de informatica.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional dedicado que realiza trabalho bem feito, cumpre prazos e frequentemente supera expectativas. Comunicação é um ponto que poderia ser melhorado.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:08.203Z"
         },
         {
             "id": "cmoepxink005sm7mdabs2ofr4",
             "userId": "cmoepximk0008m7md339mfpv3",
             "category": "Mecanico",
             "bio": "Profissional com mais de 10 anos de experiencia em mecanico.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional competente e organizado, com destaque para a qualidade do trabalho, rapidez e cumprimento de prazos, embora a comunicação pudesse ser melhorada.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:36.987Z"
         },
         {
             "id": "cmoepxink005tm7md4q2pyavg",
             "userId": "cmoepximk0009m7md02jpdb67",
             "category": "Serralheiro",
             "bio": "Profissional com mais de 4 anos de experiencia em serralheiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional dedicado e competente que cumpre prazos e realiza trabalho bem feito, destacando-se pela pontualidade e atenção ao cliente. Frequentemente indicado e recomendado por clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:53:14.881Z"
         },
         {
             "id": "cmoepxink005um7mdfyk6f949",
             "userId": "cmoepximk000am7md012mrbld",
             "category": "Vidraceiro",
             "bio": "Profissional com mais de 3 anos de experiencia em vidraceiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional que se destaca pela dedicação, qualidade do trabalho e eficiência, executando tarefas com rapidez e sem problemas. A satisfação dos clientes é evidenciada pela disposição em contratar novamente e recomendar o serviço.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:21.425Z"
         },
         {
             "id": "cmoepxink005vm7md25nh03wi",
             "userId": "cmoepximk000bm7md1clzpdul",
             "category": "Dedetizador",
             "bio": "Profissional com mais de 11 anos de experiencia em dedetizador.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador realiza seus serviços com competência, organização e qualidade, demonstrando dedicação e cuidado. A comunicação poderia ser melhorada, conforme observado em algumas avaliações.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:43.854Z"
         },
         {
             "id": "cmoepxink005wm7mdltmbo6ss",
             "userId": "cmoepximk000cm7md3ssmvb8x",
             "category": "Chaveiro",
             "bio": "Profissional com mais de 10 anos de experiencia em chaveiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador destaca-se pelo serviço de qualidade, atendimento cordial e preço justo, sendo recomendado pelos clientes. A comunicação é apontada como aspecto que poderia ser melhorado.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:55:43.450Z"
         },
         {
             "id": "cmoepxink005xm7mddfw3tgn2",
             "userId": "cmoepximk000dm7mdx1d2a8rc",
             "category": "Gesseiro",
             "bio": "Profissional com mais de 9 anos de experiencia em gesseiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Serviço de qualidade com preços honestos e transparentes, realizado com rapidez, pontualidade e atenciosidade no atendimento.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:55:34.540Z"
         },
         {
             "id": "cmoepxink005ym7mdf9trwj1y",
             "userId": "cmoepximk000em7mdl0jduao5",
             "category": "Azulejista",
             "bio": "Profissional com mais de 12 anos de experiencia em azulejista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador oferece serviço de qualidade com preços justos e atendimento atencioso. Trabalha com transparência, profissionalismo, rapidez e organização, demonstrando competência e dedicação.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:00.176Z"
         },
         {
             "id": "cmoepxink005zm7mdhphbjts4",
             "userId": "cmoepximk000fm7mdjpr14nua",
             "category": "Carpinteiro",
             "bio": "Profissional com mais de 7 anos de experiencia em carpinteiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional competente e organizado que realiza o trabalho com qualidade, rapidez e capricho. Oferece transparência e preços justos, sendo frequentemente recomendado pelos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:03.008Z"
         },
         {
             "id": "cmoepxink0060m7md9vy0w32r",
             "userId": "cmoepximk000gm7mdqqx5lx19",
             "category": "Piscineiro",
             "bio": "Profissional com mais de 14 anos de experiencia em piscineiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional caracterizado pela honestidade nas negociações, qualidade e rapidez no trabalho. Pontual, atencioso e dedicado, superando as expectativas dos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:54.001Z"
         },
         {
             "id": "cmoepxink0061m7mdu450shwc",
             "userId": "cmoepximk000hm7mdg52jywbu",
             "category": "Ar Condicionado",
             "bio": "Profissional com mais de 4 anos de experiencia em ar condicionado.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador oferece serviço de qualidade com preço justo, destacando-se pela pontualidade, competência e atendimento cordial. Trabalha de forma organizada e rápida, cumprindo os prazos combinados.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:49:08.541Z"
         },
         {
             "id": "cmoepxink0062m7md8hah5tny",
             "userId": "cmoepximk000im7md17sygugd",
             "category": "Marido de Aluguel",
             "bio": "Profissional com mais de 3 anos de experiencia em marido de aluguel.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador competente que resolve problemas de primeira, oferecendo atendimento cordial e serviço de qualidade impecável. Trabalho bem realizado com cumprimento de prazos que gera satisfação e recomendação entre clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:37.448Z"
         },
         {
             "id": "cmoepxink0063m7mdaw8u37de",
             "userId": "cmoepximk000jm7mdjvlgeopd",
             "category": "Costureira",
             "bio": "Profissional com mais de 9 anos de experiencia em costureira.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Trabalho bem executado com cumprimento de prazos e demonstração de competência. Destaca-se pela organização e eficiência na resolução de problemas.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:55:24.669Z"
         },
         {
             "id": "cmoepxink0064m7mdzg5r2kzs",
             "userId": "cmoepximk000km7mdlt00m1pf",
             "category": "Encanador",
             "bio": "Profissional com mais de 9 anos de experiencia em encanador.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador apresenta serviço de qualidade, resolvendo problemas de forma rápida e oferecendo atendimento cordial com preço justo, sendo frequentemente recomendado pelos clientes. A comunicação poderia ser melhorada conforme apontado em algumas avaliações.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:59.743Z"
         },
         {
             "id": "cmoepxink0065m7mdym076b24",
             "userId": "cmoepximk000lm7md1y77zil0",
             "category": "Eletricista",
             "bio": "Profissional com mais de 5 anos de experiencia em eletricista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional dedicado que realiza o trabalho com qualidade, cumpre prazos e oferece bom custo-benefício, resultando em experiências satisfatórias para os clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:55:15.502Z"
         },
         {
             "id": "cmoepxink0066m7mdog4qksaa",
             "userId": "cmoepximk000mm7mdxg2rm6ek",
             "category": "Pintor",
             "bio": "Profissional com mais de 8 anos de experiencia em pintor.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Realiza trabalhos com qualidade, rapidez e pontualidade, resolvendo problemas de forma eficiente. Clientes demonstram satisfação geral e disposição em indicar o profissional.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:49:59.900Z"
         },
         {
             "id": "cmoepxink0067m7mdl90kmbjx",
             "userId": "cmoepximk000nm7mdaiej5242",
             "category": "Pedreiro",
             "bio": "Profissional com mais de 13 anos de experiencia em pedreiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O profissional é reconhecido pela dedicação, qualidade do serviço e atendimento cordial, superando expectativas dos clientes. Demonstra honestidade, transparência com preços e cumpre prazos de forma impecável.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:50:37.058Z"
         },
         {
             "id": "cmoepxink0068m7mdu32rkqbf",
             "userId": "cmoepximk000om7mdw7xorl2e",
             "category": "Marceneiro",
             "bio": "Profissional com mais de 7 anos de experiencia em marceneiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Serviço de qualidade executado com rapidez e organização, demonstrando capricho nos detalhes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:56:11.869Z"
         },
         {
             "id": "cmoepxink0069m7mdy4s9lian",
             "userId": "cmoepximk000pm7mdngfctu6f",
             "category": "Jardineiro",
             "bio": "Profissional com mais de 7 anos de experiencia em jardineiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional bem avaliado pela qualidade de trabalho, honestidade e atenção aos detalhes, mas com oportunidades de melhoria na comunicação com os clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:53.422Z"
         },
         {
             "id": "cmoepxink006am7md46z5p42n",
             "userId": "cmoepximk000qm7mdx25o553t",
             "category": "Diarista",
             "bio": "Profissional com mais de 4 anos de experiencia em diarista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional que se destaca pela qualidade do trabalho, pontualidade e atendimento cordial, resolvendo problemas com eficiência. Demonstra honestidade nas negociações e postura atenciosa, conquistando a confiança dos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:49:51.128Z"
         },
         {
             "id": "cmoepxink006bm7mdqg774a9g",
             "userId": "cmoepximk000rm7mdtqi0cpd6",
             "category": "Tecnico de Informatica",
             "bio": "Profissional com mais de 12 anos de experiencia em tecnico de informatica.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador se destaca pela qualidade do trabalho, agilidade e cumprimento de prazos, mas precisa melhorar a comunicação com o cliente.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:50:46.560Z"
         },
         {
             "id": "cmoepxink006cm7mdljowmc7q",
             "userId": "cmoepximk000sm7mdqlumi42c",
             "category": "Mecanico",
             "bio": "Profissional com mais de 2 anos de experiencia em mecanico.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador destaca-se pela qualidade do serviço e eficiência na resolução de problemas, com atendimento cordial e preços justos. A comunicação é apontada como ponto a melhorar.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:49:42.713Z"
         },
         {
             "id": "cmoepxink006dm7mdpvjk8vdr",
             "userId": "cmoepximk000tm7mdrnuzjfts",
             "category": "Serralheiro",
             "bio": "Profissional com mais de 10 anos de experiencia em serralheiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador competente e organizado que executa serviços de qualidade com agilidade, pontualidade e bom atendimento. Oferece preços justos e gera satisfação geral, sendo recomendado pelos clientes, com possibilidade de melhorias na comunicação.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:48:50.114Z"
         },
         {
             "id": "cmoepxink006em7mdz4s5vqja",
             "userId": "cmoepximk000um7md3il59v7v",
             "category": "Vidraceiro",
             "bio": "Profissional com mais de 14 anos de experiencia em vidraceiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Serviços de qualidade com execução competente e pontual, porém a comunicação é um aspecto recorrentemente apontado como passível de aprimoramento.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:10.799Z"
         },
         {
             "id": "cmoepxink006fm7mdzn3rhkh3",
             "userId": "cmoepximk000vm7mdcousppfg",
             "category": "Dedetizador",
             "bio": "Profissional com mais de 3 anos de experiencia em dedetizador.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O profissional é reconhecido pela competência, pontualidade e organização no serviço. O atendimento é cordial e o trabalho realizado com rapidez e qualidade impecável.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:56:19.647Z"
         },
         {
             "id": "cmoepxink006gm7mditi2syou",
             "userId": "cmoepximk000wm7mduxmixqsz",
             "category": "Chaveiro",
             "bio": "Profissional com mais de 13 anos de experiencia em chaveiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Serviço de qualidade com profissional dedicado e comprometido com prazos, gerando satisfação entre clientes que tendem a recontratá-lo e recomendá-lo. Preço considerado justo.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:11.319Z"
         },
         {
             "id": "cmoepxink006hm7md5w8leliv",
             "userId": "cmoepximk000xm7mda9nzpo6k",
             "category": "Gesseiro",
             "bio": "Profissional com mais de 5 anos de experiencia em gesseiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador competente e organizado que oferece serviço de qualidade com preços justos, atendimento cordial e transparência. Comunicação poderia ser aprimorada em algumas situações.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:50:09.074Z"
         },
         {
             "id": "cmoepxink006im7mdsp0neevv",
             "userId": "cmoepximk000ym7md26c9kfv8",
             "category": "Azulejista",
             "bio": "Profissional com mais de 12 anos de experiencia em azulejista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional pontual e atencioso que entrega trabalho de qualidade com preço justo, embora a comunicação seja um ponto de melhoria mencionado.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:53:50.496Z"
         },
         {
             "id": "cmoepxink006jm7mdq20kt04y",
             "userId": "cmoepximk000zm7md5ddmuthm",
             "category": "Carpinteiro",
             "bio": "Profissional com mais de 12 anos de experiencia em carpinteiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O serviço se destaca pela qualidade do trabalho realizado com atenção aos detalhes, rapidez e preço justo, gerando satisfação e recomendações dos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:55:58.550Z"
         },
         {
             "id": "cmoepxink006km7mda0ec72i9",
             "userId": "cmoepximk0010m7md1zwjprx9",
             "category": "Piscineiro",
             "bio": "Profissional com mais de 6 anos de experiencia em piscineiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Executa trabalho de qualidade com preços justos, demonstrando pontualidade, transparência e cumprimento de prazos. Profissional dedicado que oferece atendimento cordial e superando expectativas dos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:52:02.455Z"
         },
         {
             "id": "cmoepxink006lm7mdpa7csvhn",
             "userId": "cmoepximk0011m7mdih4f6sol",
             "category": "Ar Condicionado",
             "bio": "Profissional com mais de 13 anos de experiencia em ar condicionado.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador competente com trabalho de boa qualidade, preço justo e atendimento cordial, bastante recomendado. Alguns clientes sugerem melhoria na comunicação.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:48:41.854Z"
         },
         {
             "id": "cmoepxink006mm7mdp3j0tvjs",
             "userId": "cmoepximk0012m7mdw6ulphxx",
             "category": "Marido de Aluguel",
             "bio": "Profissional com mais de 10 anos de experiencia em marido de aluguel.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador oferece serviço de qualidade, cumpre prazos, mantém transparência nos preços e gera boa experiência geral. Há sugestões de melhoria na comunicação.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:48:59.053Z"
         },
         {
             "id": "cmoepxink006nm7md1lhjf9u8",
             "userId": "cmoepximk0013m7mdzyosehsn",
             "category": "Costureira",
             "bio": "Profissional com mais de 11 anos de experiencia em costureira.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O serviço apresenta qualidade consistente e profissional dedicado, com alta satisfação de clientes que o recomendam. A comunicação é um ponto que poderia ser melhorado.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:30.254Z"
         },
         {
             "id": "cmoepxink006om7md3fqnoagr",
             "userId": "cmoepximk0014m7mdnru7a2af",
             "category": "Encanador",
             "bio": "Profissional com mais de 12 anos de experiencia em encanador.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "O prestador oferece serviço de qualidade com trabalho bem executado e cumprimento de prazos. Apresenta competência profissional e gera satisfação nos clientes para futuras contratações.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:19.923Z"
         },
         {
             "id": "cmoepxink006pm7mdywzy8p6a",
             "userId": "cmoepximk0015m7mdncyo9c5j",
             "category": "Eletricista",
             "bio": "Profissional com mais de 8 anos de experiencia em eletricista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional reconhecido pela honestidade nos preços, qualidade do serviço, pontualidade e organização no trabalho. Clientes destacam o atendimento atencioso e a disposição em voltar a contratar.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:55:08.736Z"
         },
         {
             "id": "cmoepxink006qm7md1h4zmila",
             "userId": "cmoepximk0016m7mdo742oln9",
             "category": "Pintor",
             "bio": "Profissional com mais de 6 anos de experiencia em pintor.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional pontual e competente que realiza o trabalho de forma ágil e bem organizada, com preços transparentes e consegue resolver problemas na primeira tentativa.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:48:19.578Z"
         },
         {
             "id": "cmoepxink006rm7md1tp5oms6",
             "userId": "cmoepximk0017m7mdkfy7c027",
             "category": "Pedreiro",
             "bio": "Profissional com mais de 5 anos de experiencia em pedreiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional competente e eficiente que resolve problemas rapidamente com boa organização e preço justo, embora a comunicação com clientes pudesse ser melhorada.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:14.120Z"
         },
         {
             "id": "cmoepxink006sm7mdrcyvlmwb",
             "userId": "cmoepximk0018m7md8xilugr9",
             "category": "Marceneiro",
             "bio": "Profissional com mais de 5 anos de experiencia em marceneiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional competente, pontual e atencioso que oferece serviço de qualidade com atendimento cordial. Demonstra transparência nos preços e resolve problemas de forma eficaz.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:51:40.266Z"
         },
         {
             "id": "cmoepxink006tm7mdj046hkcg",
             "userId": "cmoepximk0019m7mdf4wcd15g",
             "category": "Jardineiro",
             "bio": "Profissional com mais de 12 anos de experiencia em jardineiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional competente e organizado que entrega trabalho de qualidade, cumpre prazos e oferece preços justos. Demonstra dedicação e frequentemente supera as expectativas dos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:49:32.666Z"
         },
         {
             "id": "cmoepxink006um7mdcisqn6ms",
             "userId": "cmoepximk001am7mdkmnuhtjb",
             "category": "Diarista",
             "bio": "Profissional com mais de 5 anos de experiencia em diarista.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Destaca-se pela qualidade impecável do serviço, atendimento cordial e pontualidade na entrega. Mantém transparência nos preços e demonstra competência e dedicação no trabalho realizado.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:50:30.505Z"
         },
         {
             "id": "cmoepxink006vm7mdvynkm685",
             "userId": "cmoepximk001bm7mdimhvhar5",
             "category": "Tecnico de Informatica",
             "bio": "Profissional com mais de 5 anos de experiencia em tecnico de informatica.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Atendimento cordial associado a serviço bem executado e rápido. Profissional competente e organizado que cumpre prazos com eficiência.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:50:19.264Z"
         },
         {
             "id": "cmoepxink006wm7mdiaqgje24",
             "userId": "cmoepximk001cm7mdo80wgje7",
             "category": "Mecanico",
             "bio": "Profissional com mais de 9 anos de experiencia em mecanico.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Prestador oferece atendimento cordial e serviço impecável, com trabalho bem feito e cumprimento de prazos. Destaca-se por profissionalismo, transparência e disposição em superar expectativas dos clientes.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:53:00.519Z"
         },
         {
             "id": "cmoepxink006xm7mdh8c9rrkc",
             "userId": "cmoepximk001dm7mdw63uiw2u",
             "category": "Serralheiro",
             "bio": "Profissional com mais de 10 anos de experiencia em serralheiro.",
-            "createdAt": "2026-04-25T19:14:26.864Z"
+            "createdAt": "2026-04-25T19:14:26.864Z",
+            "reviewsSummary": "Profissional dedicado, pontual e atencioso que executa o serviço de forma rápida e impecável. Atendimento cordial com preço justo.",
+            "reviewsSummaryUpdatedAt": "2026-06-17T22:54:27.364Z"
         }
     ],
     "groups": [

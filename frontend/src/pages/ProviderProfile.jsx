@@ -14,6 +14,7 @@ import {
   Edit3,
   BarChart2,
   TrendingUp,
+  Sparkles,
 } from "lucide-react";
 
 const ProviderProfile = () => {
@@ -21,6 +22,7 @@ const ProviderProfile = () => {
   const { user } = useAuth();
   const [provider, setProvider] = useState(null);
   const [reviews, setReviews] = useState([]);
+  const [myReview, setMyReview] = useState(null);
   const [reviewStats, setReviewStats] = useState({
     averageRating: null,
     reviewCount: 0,
@@ -43,8 +45,30 @@ const ProviderProfile = () => {
     try {
       const res = await api.get(`/providers/${id}`);
       setProvider(res.data);
+      return res.data;
     } catch (error) {
       console.error("Erro ao buscar prestador:", error);
+      return null;
+    }
+  };
+
+  const pollSummaryUpdate = async (previousUpdatedAt) => {
+    const maxAttempts = 10;
+    for (let i = 0; i < maxAttempts; i++) {
+      await new Promise((r) => setTimeout(r, 3000));
+      const data = await fetchProvider();
+      if (data?.reviewsSummaryUpdatedAt && data.reviewsSummaryUpdatedAt !== previousUpdatedAt) {
+        return;
+      }
+    }
+  };
+
+  const fetchMyReview = async () => {
+    try {
+      const res = await api.get(`/providers/${id}/my-review`);
+      setMyReview(res.data.review);
+    } catch {
+      setMyReview(null);
     }
   };
 
@@ -79,7 +103,7 @@ const ProviderProfile = () => {
   useEffect(() => {
     const load = async () => {
       setLoading(true);
-      await Promise.all([fetchProvider(), fetchReviews()]);
+      await Promise.all([fetchProvider(), fetchReviews(), fetchMyReview()]);
       setLoading(false);
     };
     load();
@@ -110,7 +134,9 @@ const ProviderProfile = () => {
       setRating(0);
       setComment("");
       setStats(null);
-      await Promise.all([fetchProvider(), fetchReviews()]);
+      const previousUpdatedAt = provider?.reviewsSummaryUpdatedAt;
+      await Promise.all([fetchProvider(), fetchReviews(), fetchMyReview()]);
+      pollSummaryUpdate(previousUpdatedAt);
     } catch (err) {
       toast.error(err.response?.data?.error || "Erro ao enviar avaliação");
     } finally {
@@ -124,7 +150,9 @@ const ProviderProfile = () => {
       await api.delete(`/reviews/${reviewId}`);
       toast.success("Avaliação excluída!");
       setStats(null);
-      await Promise.all([fetchProvider(), fetchReviews()]);
+      const previousUpdatedAt = provider?.reviewsSummaryUpdatedAt;
+      await Promise.all([fetchProvider(), fetchReviews(), fetchMyReview()]);
+      pollSummaryUpdate(previousUpdatedAt);
     } catch (err) {
       toast.error(err.response?.data?.error || "Erro ao excluir");
     }
@@ -144,8 +172,7 @@ const ProviderProfile = () => {
   };
 
   const isOwnProfile = provider?.userId === user?.id;
-  const hasReviewed =
-    reviews.some((r) => r.user?.id === user?.id) && !ratingFilter;
+  const hasReviewed = myReview !== null;
 
   if (loading) {
     return <div className="text-center py-20 text-gray-400">Carregando...</div>;
@@ -374,6 +401,20 @@ const ProviderProfile = () => {
             ))}
           </div>
         </div>
+
+        {provider.reviewsSummary && (
+          <div className="mb-5 p-4 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
+            <div className="flex items-center gap-1.5 mb-2">
+              <Sparkles size={14} className="text-blue-500" />
+              <span className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
+                Resumo de opiniões gerado por IA
+              </span>
+            </div>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              {provider.reviewsSummary}
+            </p>
+          </div>
+        )}
 
         {reviews.length === 0 ? (
           <p className="text-gray-400 text-sm py-4">

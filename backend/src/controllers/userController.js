@@ -56,7 +56,7 @@ exports.getUsers = asyncHandler(async (req, res) => {
 
 exports.updateUser = asyncHandler(async (req, res) => {
     const { id } = req.params;
-    const { name, email, phone, avatar, age, gender, password } = req.body;
+    const { name, email, phone, avatar, birthDate, gender, password } = req.body;
 
     if (req.user.id !== id && req.user.role !== 'ADMIN') {
         return res.status(403).json({ error: 'Sem permissão para atualizar este usuário' });
@@ -67,7 +67,7 @@ exports.updateUser = asyncHandler(async (req, res) => {
     if (email !== undefined) data.email = email;
     if (phone !== undefined) data.phone = phone;
     if (avatar !== undefined) data.avatar = avatar;
-    if (age !== undefined) data.age = age;
+    if (birthDate !== undefined) data.birthDate = birthDate ? new Date(birthDate) : null;
     if (gender !== undefined) data.gender = gender;
     if (password !== undefined && password !== '') {
         data.password = await bcrypt.hash(password, 10);

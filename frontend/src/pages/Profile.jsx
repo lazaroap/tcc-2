@@ -14,7 +14,7 @@ const Profile = () => {
     name: "",
     email: "",
     phone: "",
-    age: "",
+    birthDate: "",
     gender: "",
     avatar: "",
   });
@@ -39,7 +39,7 @@ const Profile = () => {
           name: u.name || "",
           email: u.email || "",
           phone: u.phone || "",
-          age: u.age || "",
+          birthDate: u.birthDate ? u.birthDate.substring(0, 10) : "",
           gender: u.gender || "",
           avatar: u.avatar || "",
         });
@@ -113,13 +113,20 @@ const Profile = () => {
   };
 
   const handleChange = (e) => {
-    const value =
-      e.target.name === "age"
-        ? e.target.value
-          ? parseInt(e.target.value)
-          : ""
-        : e.target.value;
-    setForm({ ...form, [e.target.name]: value });
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const computeAge = (isoDate) => {
+    if (!isoDate) return null;
+    const birth = new Date(isoDate);
+    if (Number.isNaN(birth.getTime())) return null;
+    const today = new Date();
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDiff = today.getMonth() - birth.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age >= 0 && age < 150 ? age : null;
   };
 
   const handleSubmit = async (e) => {
@@ -128,7 +135,7 @@ const Profile = () => {
     try {
       const data = { ...form };
       if (password) data.password = password;
-      if (data.age === "") delete data.age;
+      if (data.birthDate === "") data.birthDate = null;
       await api.put(`/users/${user.id}`, data);
       const stored = JSON.parse(localStorage.getItem("user"));
       localStorage.setItem(
@@ -338,14 +345,20 @@ const Profile = () => {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <label className="text-sm font-medium text-gray-700">Idade</label>
+              <label className="text-sm font-medium text-gray-700 flex items-center justify-between">
+                <span>Data de nascimento</span>
+                {computeAge(form.birthDate) !== null && (
+                  <span className="text-xs font-normal text-gray-500">
+                    {computeAge(form.birthDate)} anos
+                  </span>
+                )}
+              </label>
               <input
-                type="number"
-                name="age"
-                value={form.age}
+                type="date"
+                name="birthDate"
+                value={form.birthDate}
                 onChange={handleChange}
-                min="1"
-                max="120"
+                max={new Date().toISOString().substring(0, 10)}
                 className="border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>

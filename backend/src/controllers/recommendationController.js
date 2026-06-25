@@ -308,7 +308,12 @@ exports.getGroupRequests = asyncHandler(async (req, res) => {
             include: {
                 author: { select: { id: true, name: true, avatar: true } },
                 replies: {
-                    include: { user: { select: { id: true, name: true } } },
+                    include: {
+                        user: { select: { id: true, name: true } },
+                        provider: {
+                            select: { id: true, category: true, user: { select: { id: true, name: true, avatar: true } } },
+                        },
+                    },
                     orderBy: { createdAt: 'asc' },
                 },
                 _count: { select: { replies: true } },
@@ -344,7 +349,7 @@ exports.deleteRequest = asyncHandler(async (req, res) => {
 
 exports.addRequestReply = asyncHandler(async (req, res) => {
     const { id } = req.params;
-    const { content } = req.body;
+    const { content, phone, providerId } = req.body;
     const userId = req.user.id;
 
     const request = await db.recommendationRequest.findUnique({ where: { id } });
@@ -356,9 +361,25 @@ exports.addRequestReply = asyncHandler(async (req, res) => {
         return res.status(400).json({ error: 'Este pedido ja foi resolvido' });
     }
 
+    if (providerId) {
+        const provider = await db.provider.findUnique({ where: { id: providerId } });
+        if (!provider) return res.status(404).json({ error: 'Prestador indicado não encontrado' });
+    }
+
     const reply = await db.requestReply.create({
-        data: { content, userId, requestId: id },
-        include: { user: { select: { id: true, name: true } } },
+        data: {
+            content,
+            userId,
+            requestId: id,
+            phone: phone || null,
+            providerId: providerId || null,
+        },
+        include: {
+            user: { select: { id: true, name: true } },
+            provider: {
+                select: { id: true, category: true, user: { select: { id: true, name: true, avatar: true } } },
+            },
+        },
     });
 
     if (request.authorId !== userId) {

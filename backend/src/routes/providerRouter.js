@@ -12,6 +12,7 @@ router.get('/providers', providerController.listAllProviders);
 router.get('/providers/category/:category', providerController.listProvidersByCategory);
 router.get('/providers/:id', id, validate, providerController.getProvider);
 router.get('/providers/:id/stats', id, validate, providerController.getProviderStats);
+router.get('/providers/:id/my-review', authMiddleware, id, validate, providerController.getMyReviewForProvider);
 router.put('/providers/:id', authMiddleware, id, updateProviderRules, validate, providerController.updateProvider);
 router.delete('/providers/:id', authMiddleware, id, validate, providerController.deleteProvider);
 

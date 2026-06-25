@@ -15,7 +15,7 @@ model User {
 
   phone     String?
   avatar  String?
-  age       Int?
+  birthDate DateTime? @db.Date
   gender    Gender?
 
   role      UserRole @default(USER)
@@ -66,9 +66,13 @@ model Provider {
   category  String
   bio       String?
 
+  reviewsSummary           String?
+  reviewsSummaryUpdatedAt  DateTime?
+
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   reviews   Review[]
   recommendations Recommendation[]
+  requestReplies  RequestReply[]
 
   createdAt DateTime @default(now())
 }
@@ -194,14 +198,17 @@ model RecommendationRequest {
 }
 
 model RequestReply {
-  id      String @id @default(cuid())
+  id      String  @id @default(cuid())
   content String
+  phone   String?
 
-  userId    String
-  requestId String
+  userId     String
+  requestId  String
+  providerId String?
 
-  user    User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
-  request RecommendationRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  user     User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  request  RecommendationRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  provider Provider?             @relation(fields: [providerId], references: [id], onDelete: SetNull)
 
   createdAt DateTime @default(now())
 }
