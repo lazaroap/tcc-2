@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
 const api = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: `${API_BASE}/api`,
 });
 
 // Interceptor de requisição: adicionar token
@@ -25,7 +27,11 @@ api.interceptors.response.use(
     // Nao tentar refresh em rotas de autenticacao
     const isAuthRoute = originalRequest.url?.includes("/auth/");
 
-    if (error.response?.status === 401 && !originalRequest._retry && !isAuthRoute) {
+    if (
+      error.response?.status === 401 &&
+      !originalRequest._retry &&
+      !isAuthRoute
+    ) {
       originalRequest._retry = true;
 
       const refreshToken = localStorage.getItem("refreshToken");
@@ -37,7 +43,7 @@ api.interceptors.response.use(
       }
 
       try {
-        const res = await axios.post("http://localhost:3000/api/auth/refresh", {
+        const res = await axios.post(`${API_BASE}/api/auth/refresh`, {
           refreshToken,
         });
 

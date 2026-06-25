@@ -4,7 +4,7 @@ import { Trash2, HelpCircle, Send, CheckCircle, X } from "lucide-react";
 import api from "../services/api";
 import toast from "react-hot-toast";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 const WhatsappIcon = ({ size = 14 }) => (
   <svg
