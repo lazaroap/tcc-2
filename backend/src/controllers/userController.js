@@ -66,7 +66,7 @@ exports.updateUser = asyncHandler(async (req, res) => {
     if (name !== undefined) data.name = name;
     if (email !== undefined) data.email = email;
     if (phone !== undefined) data.phone = phone || null;
-    if (avatar) data.avatar = avatar; // so atualiza se vier valor; evita apagar foto existente com string vazia
+    if (avatar) data.avatar = avatar;
     if (birthDate !== undefined) data.birthDate = birthDate ? new Date(birthDate) : null;
     if (gender !== undefined) data.gender = gender || null;
     if (password !== undefined && password !== '') {
