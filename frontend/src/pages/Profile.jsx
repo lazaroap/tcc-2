@@ -70,11 +70,10 @@ const Profile = () => {
   const handleInviteResponse = async (inviteId, action) => {
     setRespondingInvite(inviteId);
     try {
-      await api.put(`/invites/${inviteId}/${action}`);
+      const res = await api.put(`/invites/${inviteId}/${action}`);
       toast.success(
-        action === "accept"
-          ? "Convite aceito! Você entrou no grupo."
-          : "Convite recusado.",
+        res.data?.message ||
+          (action === "accept" ? "Convite aceito!" : "Convite recusado."),
       );
       setInvites(invites.filter((inv) => inv.id !== inviteId));
     } catch (err) {

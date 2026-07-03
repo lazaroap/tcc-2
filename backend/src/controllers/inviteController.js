@@ -73,31 +73,78 @@ exports.acceptInvite = asyncHandler(async (req, res) => {
     const { id } = req.params;
     const userId = req.user.id;
 
-    const invite = await db.groupInvite.findUnique({ where: { id } });
+    const invite = await db.groupInvite.findUnique({
+        where: { id },
+        include: { group: { select: { id: true, name: true, ownerId: true } } },
+    });
     if (!invite) return res.status(404).json({ error: 'Convite não encontrado' });
     if (invite.receiverId !== userId) return res.status(403).json({ error: 'Este convite nao e seu' });
     if (invite.status !== 'PENDING') return res.status(400).json({ error: 'Convite já foi respondido' });
 
-    const [updatedInvite] = await db.$transaction([
+    const receiver = await db.user.findUnique({ where: { id: userId }, select: { name: true } });
+
+    const senderMembership = await db.groupMember.findUnique({
+        where: { userId_groupId: { userId: invite.senderId, groupId: invite.groupId } },
+    });
+    const senderIsAdmin = invite.group.ownerId === invite.senderId || senderMembership?.role === 'ADMIN';
+
+    if (senderIsAdmin) {
+        const [updatedInvite] = await db.$transaction([
+            db.groupInvite.update({
+                where: { id },
+                data: { status: 'ACCEPTED' },
+                include: { group: { select: { id: true, name: true } } },
+            }),
+            db.groupMember.create({
+                data: { groupId: invite.groupId, userId, role: 'MEMBER' },
+            }),
+        ]);
+
+        await createNotification(
+            invite.senderId,
+            'INVITE_ACCEPTED',
+            `${receiver.name} aceitou seu convite para o grupo "${updatedInvite.group.name}"`,
+            invite.id
+        );
+
+        return res.status(200).json({ message: 'Convite aceito! Você agora é membro do grupo.', invite: updatedInvite });
+    }
+
+    // Convite de membro comum: o aceite vira uma solicitação de entrada pendente de aprovação.
+    const sender = await db.user.findUnique({ where: { id: invite.senderId }, select: { name: true } });
+    const inviteNote = `Convidado(a) por ${sender?.name || 'um membro'}`;
+
+    const [updatedInvite, joinRequest] = await db.$transaction([
         db.groupInvite.update({
             where: { id },
             data: { status: 'ACCEPTED' },
             include: { group: { select: { id: true, name: true } } },
         }),
-        db.groupMember.create({
-            data: { groupId: invite.groupId, userId, role: 'MEMBER' },
+        db.joinRequest.upsert({
+            where: { userId_groupId: { userId, groupId: invite.groupId } },
+            update: { status: 'PENDING', message: inviteNote },
+            create: { userId, groupId: invite.groupId, message: inviteNote },
         }),
     ]);
 
-    const receiver = await db.user.findUnique({ where: { id: userId }, select: { name: true } });
+    await createNotification(
+        invite.group.ownerId,
+        'JOIN_REQUEST_RECEIVED',
+        `${receiver.name} aceitou um convite e aguarda aprovação para entrar no grupo "${updatedInvite.group.name}"`,
+        joinRequest.id
+    );
+
     await createNotification(
         invite.senderId,
         'INVITE_ACCEPTED',
-        `${receiver.name} aceitou seu convite para o grupo "${updatedInvite.group.name}"`,
+        `${receiver.name} aceitou seu convite para "${updatedInvite.group.name}" (aguardando aprovação de um admin)`,
         invite.id
     );
 
-    res.status(200).json({ message: 'Convite aceito! Você agora é membro do grupo.', invite: updatedInvite });
+    return res.status(200).json({
+        message: 'Convite aceito! Sua entrada está aguardando aprovação de um admin.',
+        invite: updatedInvite,
+    });
 });
 
 exports.rejectInvite = asyncHandler(async (req, res) => {
