@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import api from "../services/api";
 import toast from "react-hot-toast";
@@ -19,6 +19,8 @@ import {
 
 const ProviderProfile = () => {
   const { id } = useParams();
+  const location = useLocation();
+  const reviewGroupId = location.state?.groupId || null;
   const { user } = useAuth();
   const [provider, setProvider] = useState(null);
   const [reviews, setReviews] = useState([]);
@@ -128,7 +130,7 @@ const ProviderProfile = () => {
         toast.success("Avaliação atualizada!");
         setEditingReview(null);
       } else {
-        await api.post(`/providers/${id}/reviews`, { rating, comment });
+        await api.post(`/providers/${id}/reviews`, { rating, comment, groupId: reviewGroupId });
         toast.success("Avaliação enviada!");
       }
       setRating(0);
@@ -328,6 +330,12 @@ const ProviderProfile = () => {
           <h2 className="text-lg font-semibold text-gray-700 mb-4">
             {editingReview ? "Editar avaliação" : "Avaliar este prestador"}
           </h2>
+
+          {reviewGroupId && !editingReview && (
+            <p className="text-xs text-blue-700 bg-blue-50 border border-blue-100 rounded-lg px-3 py-2 mb-4">
+              Esta avaliação será vinculada ao grupo em que você está e aparecerá na aba "Avaliações" dele.
+            </p>
+          )}
 
           <div className="mb-4">
             <label className="text-sm font-medium text-gray-700 mb-2 block">

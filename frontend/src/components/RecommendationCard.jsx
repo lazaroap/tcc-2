@@ -28,7 +28,7 @@ const buildWhatsappLink = (rawPhone, contextTitle) => {
   return `https://wa.me/${withCountry}?text=${msg}`;
 };
 
-const RecommendationCard = ({ rec, userId, isGroupAdmin, onUpdate }) => {
+const RecommendationCard = ({ rec, userId, isGroupAdmin, onUpdate, groupId }) => {
   const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState([]);
   const [loadingComments, setLoadingComments] = useState(false);
@@ -133,6 +133,7 @@ const RecommendationCard = ({ rec, userId, isGroupAdmin, onUpdate }) => {
       {rec.provider ? (
         <Link
           to={`/providers/${rec.provider.id}`}
+          state={{ groupId }}
           className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition mb-3"
         >
           <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm shrink-0">

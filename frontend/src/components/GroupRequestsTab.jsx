@@ -140,6 +140,7 @@ const GroupRequestsTab = ({ groupId, userId, isGroupAdmin, categories }) => {
               userId={userId}
               isGroupAdmin={isGroupAdmin}
               onUpdate={fetchRequests}
+              groupId={groupId}
             />
           ))}
         </div>

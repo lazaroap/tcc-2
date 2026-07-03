@@ -73,6 +73,7 @@ const GroupRecommendationsTab = ({
               userId={userId}
               isGroupAdmin={isGroupAdmin}
               onUpdate={fetchRecommendations}
+              groupId={groupId}
             />
           ))}
         </div>

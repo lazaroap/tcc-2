@@ -29,7 +29,7 @@ const buildWhatsappLink = (rawPhone, requestTitle) => {
   return `https://wa.me/${withCountry}?text=${msg}`;
 };
 
-const RequestCard = ({ request, userId, isGroupAdmin, onUpdate }) => {
+const RequestCard = ({ request, userId, isGroupAdmin, onUpdate, groupId }) => {
   const [showReplies, setShowReplies] = useState(false);
   const [newReply, setNewReply] = useState({ content: "", phone: "", providerId: "" });
   const [providerQuery, setProviderQuery] = useState("");
@@ -210,6 +210,7 @@ const RequestCard = ({ request, userId, isGroupAdmin, onUpdate }) => {
                         {r.provider && (
                           <Link
                             to={`/providers/${r.provider.id}`}
+                            state={{ groupId }}
                             className="inline-flex items-center gap-1 text-xs text-blue-600 hover:underline"
                           >
                             {r.provider.user?.avatar ? (
