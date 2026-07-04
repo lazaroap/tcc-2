@@ -8,6 +8,7 @@ import ReviewItem from "../components/ReviewItem";
 import Pagination from "../components/Pagination";
 import DistributionBar, { barColors } from "../components/DistributionBar";
 import TrendChart from "../components/TrendChart";
+import { hasEnoughReviews, MIN_REVIEWS_FOR_RATING } from "../utils/rating";
 import {
   MessageSquare,
   Trash2,
@@ -189,6 +190,7 @@ const ProviderProfile = () => {
   }
 
   const avg = reviewStats.averageRating;
+  const showRating = hasEnoughReviews(reviewStats.reviewCount);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -214,12 +216,21 @@ const ProviderProfile = () => {
               <p className="text-gray-600 mt-3 text-sm">{provider.bio}</p>
             )}
             <div className="flex items-center gap-3 mt-3 flex-wrap">
-              <StarRating rating={Math.round(avg || 0)} readonly size={20} />
-              <span className="text-sm text-gray-500">
-                {avg
-                  ? `${avg.toFixed(1)} de 5 (${reviewStats.reviewCount} ${reviewStats.reviewCount === 1 ? "avaliacao" : "avaliacoes"})`
-                  : "Sem avaliacoes ainda"}
-              </span>
+              {showRating ? (
+                <>
+                  <StarRating rating={Math.round(avg || 0)} readonly size={20} />
+                  <span className="text-sm text-gray-500">
+                    {avg.toFixed(1)} de 5 ({reviewStats.reviewCount}{" "}
+                    {reviewStats.reviewCount === 1 ? "avaliacao" : "avaliacoes"})
+                  </span>
+                </>
+              ) : (
+                <span className="text-sm text-gray-400">
+                  {reviewStats.reviewCount > 0
+                    ? `${reviewStats.reviewCount} ${reviewStats.reviewCount === 1 ? "avaliacao" : "avaliacoes"} — nota exibida a partir de ${MIN_REVIEWS_FOR_RATING}`
+                    : "Sem avaliacoes ainda"}
+                </span>
+              )}
               {!isOwnProfile && (
                 <button
                   onClick={() => {

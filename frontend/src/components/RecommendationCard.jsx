@@ -4,6 +4,7 @@ import { ThumbsUp, ThumbsDown, MessageSquare, Trash2, Send } from "lucide-react"
 import StarRating from "./StarRating";
 import api from "../services/api";
 import toast from "react-hot-toast";
+import { hasEnoughReviews } from "../utils/rating";
 
 const WhatsappIcon = ({ size = 14 }) => (
   <svg
@@ -146,16 +147,22 @@ const RecommendationCard = ({ rec, userId, isGroupAdmin, onUpdate, groupId }) =>
             <span className="text-xs text-blue-600 capitalize">{rec.provider.category}</span>
           </div>
           <div className="flex items-center gap-1">
-            <StarRating
-              rating={Math.round(rec.provider.averageRating || 0)}
-              readonly
-              size={14}
-            />
-            <span className="text-xs text-gray-400">
-              {rec.provider.averageRating
-                ? rec.provider.averageRating.toFixed(1)
-                : "-"}
-            </span>
+            {hasEnoughReviews(rec.provider.reviewCount) ? (
+              <>
+                <StarRating
+                  rating={Math.round(rec.provider.averageRating || 0)}
+                  readonly
+                  size={14}
+                />
+                <span className="text-xs text-gray-400">
+                  {rec.provider.averageRating.toFixed(1)}
+                </span>
+              </>
+            ) : (
+              <span className="text-xs text-gray-400">
+                {rec.provider.reviewCount > 0 ? "Poucas avaliações" : "Novo"}
+              </span>
+            )}
           </div>
         </Link>
       ) : rec.externalName ? (

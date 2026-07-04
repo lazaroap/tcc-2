@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import StarRating from "./StarRating";
+import { hasEnoughReviews } from "../utils/rating";
 
 const ProviderCard = ({ provider }) => {
   return (
@@ -19,16 +20,22 @@ const ProviderCard = ({ provider }) => {
             {provider.category}
           </span>
           <div className="flex items-center gap-2 mt-2">
-            <StarRating
-              rating={Math.round(provider.averageRating || 0)}
-              readonly
-              size={16}
-            />
-            <span className="text-sm text-gray-500">
-              {provider.averageRating
-                ? `${provider.averageRating.toFixed(1)} (${provider.reviewCount})`
-                : "Sem avaliações"}
-            </span>
+            {hasEnoughReviews(provider.reviewCount) ? (
+              <>
+                <StarRating
+                  rating={Math.round(provider.averageRating || 0)}
+                  readonly
+                  size={16}
+                />
+                <span className="text-sm text-gray-500">
+                  {provider.averageRating.toFixed(1)} ({provider.reviewCount})
+                </span>
+              </>
+            ) : (
+              <span className="text-sm text-gray-400">
+                {provider.reviewCount > 0 ? "Poucas avaliações" : "Sem avaliações"}
+              </span>
+            )}
           </div>
         </div>
       </div>

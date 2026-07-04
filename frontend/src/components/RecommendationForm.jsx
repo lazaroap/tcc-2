@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../services/api";
 import toast from "react-hot-toast";
+import { hasEnoughReviews } from "../utils/rating";
 
 const RecommendationForm = ({ groupId, categories, onSuccess, onCancel }) => {
   const [recForm, setRecForm] = useState({ title: "", description: "" });
@@ -186,7 +187,7 @@ const RecommendationForm = ({ groupId, categories, onSuccess, onCancel }) => {
                             </span>
                           </p>
                         </div>
-                        {p.averageRating && (
+                        {hasEnoughReviews(p.reviewCount) && (
                           <span className="text-xs text-yellow-600 font-medium">
                             {p.averageRating.toFixed(1)}
                           </span>
