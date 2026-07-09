@@ -43,6 +43,7 @@ const ProviderProfile = () => {
   const [comment, setComment] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [editingReview, setEditingReview] = useState(null);
+  const [summaryUpdating, setSummaryUpdating] = useState(false);
 
   const fetchProvider = async () => {
     try {
@@ -56,13 +57,18 @@ const ProviderProfile = () => {
   };
 
   const pollSummaryUpdate = async (previousUpdatedAt) => {
-    const maxAttempts = 10;
-    for (let i = 0; i < maxAttempts; i++) {
-      await new Promise((r) => setTimeout(r, 3000));
-      const data = await fetchProvider();
-      if (data?.reviewsSummaryUpdatedAt && data.reviewsSummaryUpdatedAt !== previousUpdatedAt) {
-        return;
+    const maxAttempts = 20;
+    setSummaryUpdating(true);
+    try {
+      for (let i = 0; i < maxAttempts; i++) {
+        await new Promise((r) => setTimeout(r, 3000));
+        const data = await fetchProvider();
+        if (data?.reviewsSummaryUpdatedAt && data.reviewsSummaryUpdatedAt !== previousUpdatedAt) {
+          return;
+        }
       }
+    } finally {
+      setSummaryUpdating(false);
     }
   };
 
@@ -421,17 +427,24 @@ const ProviderProfile = () => {
           </div>
         </div>
 
-        {provider.reviewsSummary && (
+        {(provider.reviewsSummary || summaryUpdating) && (
           <div className="mb-5 p-4 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
             <div className="flex items-center gap-1.5 mb-2">
               <Sparkles size={14} className="text-blue-500" />
               <span className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
                 Resumo de opiniões gerado por IA
               </span>
+              {summaryUpdating && (
+                <span className="text-xs text-blue-400 animate-pulse ml-auto">
+                  Atualizando resumo…
+                </span>
+              )}
             </div>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              {provider.reviewsSummary}
-            </p>
+            {provider.reviewsSummary && (
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {provider.reviewsSummary}
+              </p>
+            )}
           </div>
         )}
 

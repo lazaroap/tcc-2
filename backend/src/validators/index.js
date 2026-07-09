@@ -76,7 +76,7 @@ const updateProviderRules = [
 const createReviewRules = [
     body('rating').isInt({ min: 1, max: 5 }).withMessage('Nota deve ser entre 1 e 5'),
     body('comment').optional().trim().escape(),
-    body('groupId').optional().notEmpty().withMessage('ID do grupo inválido'),
+    body('groupId').optional({ values: 'falsy' }).notEmpty().withMessage('ID do grupo inválido'),
 ];
 
 const updateReviewRules = [
